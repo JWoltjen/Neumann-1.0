@@ -38,14 +38,17 @@ btn.addEventListener('click', () => {
 function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance(); 
 
-    if(message.includes('hello')){
-        greetings[Math.floor(Math.random() * greetings.length)]
-    }
+    speech.text = `I'm sorry, I didn't quite get that`; 
 
-    speech.text = message; 
+    if(message.includes('hello')){
+        const finalText = greetings[Math.floor(Math.random() * greetings.length)]
+        console.log(finalText)
+        speech.text = finalText; 
+    } 
+
     speech.volume = 1; 
-    speech.rate = .7; 
-    speech.pitch = .7; 
+    speech.rate = .8; 
+    speech.pitch = .3; 
 
     window.speechSynthesis.speak(speech); 
-}
+    }
