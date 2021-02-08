@@ -2,6 +2,20 @@ const btn = document.querySelector('.talk');
 const content = document.querySelector('.content'); 
 
 
+const greetings = [
+    `Greetings, professor.`, 
+    `Salutations`, 
+    `It's a wonderful day to be alive`, 
+    `Hello`, 
+    `Hey`, 
+    `Hi there`,
+    `Hi`
+    ]
+
+const weather = [
+
+    ]
+
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
 const recognition = new SpeechRecognition(); 
 
@@ -23,6 +37,11 @@ btn.addEventListener('click', () => {
 
 function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance(); 
+
+    if(message.includes('hello')){
+        greetings[Math.floor(Math.random() * greetings.length)]
+    }
+
     speech.text = message; 
     speech.volume = 1; 
     speech.rate = .7; 
