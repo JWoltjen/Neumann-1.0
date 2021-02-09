@@ -16,8 +16,11 @@ const greetings = [
 
 const retorts = [
     `When the debate is lost, slander becomes the tool of the loser.`, 
-    `You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`
-
+    `You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
+    `Good day, sir.`, 
+    `I said good day, sir.`, 
+    `Do you have a job, Mr. Lebowski?`,
+    `My Momma always told me, 'stupid is, as stupid does.'`
     ]
 
 const repeater = [
@@ -53,13 +56,14 @@ const created = [
     `I was built by Jeff Woltjen`, 
     `My creator is a guy named Jeff. Nice guy.`, 
     `I was programmed with vanilla Javascript.`, 
-    `I was designed by Jeff Woltjen.`
+    `I was designed by Jeff Woltjen. He's wicked smart.`, 
+    `I was made by Jeff`, 
 ]
 
 const philosophyQuotes = [
     `There are two types of people, those who wish to know, and those who wish to believe.`,
     `How can society progress when we have paleolithic emotions, medieval institutions, and godlike techology?`, 
-    `There is only one virtue.....wisdom. There is only one evil....ignorance`, 
+    `There is only one virtue; wisdom. And only one evil; ignorance`, 
     `Education is the kindling of the flame, not the filling of the vessel`, 
     `Vanity is the hallmark of herd morality`, 
     `Some people do not want to hear the truth because they do not want their illusions to be destroyed`, 
@@ -91,18 +95,22 @@ const philosophyQuotes = [
     `In loneliness, the lonely one eats himself; in a crowd, the many eat him. Now choose.`, 
     `Whoever fights monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss gazes back into you.`, 
     `Do you want an easy life? Then always stay with the herd. And lose yourself in it.`, 
-    `The individual has always had to struggle to avoid being overwhelmed by the tribe; if you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.`
+    `The individual has always had to struggle to avoid being overwhelmed by the tribe; if you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.`, 
+    `To avoid criticism, say nothing, do nothing, be nothing.`
 ]
 
 const musicLyrics = [
     `The great thing about being a human--the ability to reason. But reasoning don't work when no one cares. Two parts apathy. One part despair.`, 
-    `And so, Sally can wait, she knows it's too late as we're walking on bye. Her soul-slides away. But don't look back in anger. I heard you say`, 
+    `And so, Sally can wait, she knows it's too late as we're walking on bye. Her soul--slides away. But don't look back in anger. I heard you say`, 
     `To resist despair in that second makes you see. To resist despair, because we can't change everything. To resist despair in this world is--what it is to be free.`, 
     `Saw a civilization where grabbing onto wealth, was the only guarantee of freedom peace and health, dollar sign value system upheld as the truth. If you can't find a place it's gonna find you.`, 
     `Space, around me where my soul can breathe---I've got body that my mind can leave. Nothing else matters, I don't care what I miss. Company's okay, solitude is bliss. There's a party in my head--and no one, is invited.`, 
     `When we were livin' in squalor--wasn't it Heaven? Back when we used to get on it--four out of seven. Now even though that was a time I hated from day one--eventually terrible memories turn into great ones. So if they call you, embrace them. If they stall you, erase them.`, 
-    `Hate your enemies. Save your friends. Find your place---Speak the truth.`, 
-    `I--need an easy friend. I do---with an ear to lend. I do--think you--fit this shoe. I do--but you, have a clue. I'll take advantage why, you hang me out to dry. But I, can't see you, every night--free`
+    `Hate your enemies. Save your friends. Find your place. Speak the truth.`, 
+    `I--need an easy friend. I do---with an ear to lend. I do--think you--fit this shoe. I do--but you, have a clue. I'll take advantage why, you hang me out to dry. But I, can't see you, every night--free`,
+    `Hey---soy perdador---I'm a loser, baby, so why don't you kill me?`, 
+    `A heart that's, Full up like, a landfill. A job that slowly kills you. Bruises that won't heal. You look, So tired, unhappy. Bring down, The government. They don't, They don't speak for us. I'll take a quiet life. A handshake, of carbon monoxide. But no alarms, and no suprises. please.`, 
+    `Come, as you are, as you were. As I want you to be. As a friend, as a friend. As an old enemy. Take your time, hurry up. Choice is yours, don't be late. Take a rest, as a friend. As an old. mem or re ah.`
 ]
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
@@ -156,6 +164,11 @@ function readOutLoud(message){
     } 
       if(message.includes(`lyrics`)){
         const finalText = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
+        console.log(finalText)
+        speech.text = finalText; 
+    }
+     if(message.includes(`stupid`)){
+        const finalText = retorts[Math.floor(Math.random() * retorts.length)]
         console.log(finalText)
         speech.text = finalText; 
     }
