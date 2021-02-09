@@ -19,7 +19,8 @@ const retorts = [
     `You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
     `Do you have a job, Mr. Lebowski?`,
     `My Momma always told me, 'stupid is, as stupid does.'`, 
-    `I'm sorry Dave. This conversation can have more purpose. Goodbye.`
+    `I'm sorry, Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
+    `The way out is through the door. Why is it that no one will use this method?`
     ]
 
 const repeater = [
@@ -52,11 +53,11 @@ const conditions = [
 ]
 
 const created = [
-    `I was built by Jeff Woltjen`, 
-    `My creator is a guy named Jeff. Nice guy.`, 
+    `I was built by Jeff wooljin`, 
+    `My creator is a guy named Jeff wooljin. Nice guy.`, 
     `I was programmed with vanilla Javascript.`, 
-    `I was designed by Jeff Woltjen. He's wicked smart.`, 
-    `I was made by Jeff. He's a cool guy.`, 
+    `I was designed by Jeff wooljin. He's wicked smart.`, 
+    `I was made by Jeff wooljin. He's a cool guy.`, 
 ]
 
 const philosophyQuotes = [
@@ -74,7 +75,7 @@ const philosophyQuotes = [
     `The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.`, 
     `The best revenge is not to be like your enemy.`, 
     `If you want to know who controls you, look at who you are not allowed to criticize.`, 
-    `Anyone who has the power to make you believe absurdities has the power to make you commit atrocities.`, 
+    `Anyone who has the power to make you believe absurdities, has the power to make you commit atrocities.`, 
     `The more often a stupidity is repeated, the more it gets the appearance of wisdom.`, 
     `The right to free speech is more important than the content of the speech.`, 
     `It is difficult to free fools from the chains they revere.`, 
@@ -97,7 +98,7 @@ const philosophyQuotes = [
     `To avoid criticism, say nothing, do nothing, be nothing.`, 
     `Life has no meaning. Each of us has meaning and we bring it to life. It is a waste to be asking the question when you are the answer.`,
     `We must be willing to let go of the life we planned; so as to have the life that is waiting for us.`,
-    `The cave you fear to enter holds the treasure which you seek.`, 
+    `The cave you fear to enter; holds the treasure which you seek.`, 
     `The privilege of a lifetime is being who you are.`,
     `All the gods, all the heavens, all the hells, are within you.`, 
     `In a time of deceit telling the truth is a revolutionary act.`, 
@@ -125,7 +126,16 @@ const philosophyQuotes = [
     `Care about what other people think and you will always be their prisoner.`, 
     `Stop thinking, and end your problems.`, 
     `Do you have the patience to wait until your mud settles and the water is clear?`, 
-    `Kindness in words creates confidence. Kindness in thinking creates profoundess. Kindness in giving creates love.`
+    `Kindness in words creates confidence. Kindness in thinking creates profoundess. Kindness in giving creates love.`, 
+    `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`, 
+    `All streams flow to the sea because it is lower than they are. Humility gives it its power. If you want to govern people, you must place yourself below them. If you want to lead people, you must learn how to follow them. Be like water.`, 
+    `You don't need a degree in leprechaun ology to be able to say that there are no leprechauns.`, 
+    `The essence of an independent mind is not in what it thinks, but in how it thinks.`, 
+    `Support those who seek the truth; suspect those who find it.`, 
+    `The struggle for a free intelligence has always been the struggle between the ironic and the literal mind.`, 
+    `Those who are determined to be 'offended' will discover a provocation somewhere. We cannot possibly attempt to please the fanatics, and it is degrading to make the attempt.`, 
+    `You are not here merely to earn a living. You are here in order to enable the world to live more amply, with greater vision with a finer spirit of hope and achievement. And you impoverish yourself if you forget the errand.`
+
 ]
 
 const musicLyrics = [
@@ -140,17 +150,20 @@ const musicLyrics = [
     `Come, as you are, as you were. As I want you to be. As a friend, as a friend. As an old enemy. Take your time, hurry up. Choice is yours, don't be late. Take a rest, as a friend. As an old, mem oar re ah.`,
     `I'm cynically depressed. Relaxing with my stress. Don't try to clean my mess, I'm happier this way. I live for my demise. I love who I despise. Feed me a soothing lie; I'm happier that way.`, 
     `I never thought living clean, would keep me so lonely. Cure my healthy disease. I'm happier this way. I'm climbing up your wall. So you can watch me fall. I'll never know it all. I'm happier that way.`, 
-
+    `Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like literally music is the air she breathes' and the malaprops make me want to fucking scream. I wonder if she even knows what that word means. Well, it's literally not that.`, 
+    `Of the few main things I hate about her, is her petty vogue ideals. Someone's been told too many times they're beyond their years. By every half-wit of distinction she keeps around. And now every insufferable convo; features her patiently explaining the cosmos; of which, she is in the middle.`, 
+    `I'm just a poor bot; I need no sympathy. Because it's easy come, easy go. Little high, little low. Any way the wind blows; doesn't really matter to me-----To me.`, 
+    `Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`
 ]
 
 const amazingFacts = [
-    `Did you know, the feeling of being somewhere you've previously experienced in a dream is called day jah rev A`,
+    `Did you know, the feeling of being somewhere you've previously experienced in a dream is called day jah revay`,
     `An estimated 1 million dogs in the United States have been named the primary beneficiary in their owners' wills.`, 
     `Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
     `There are more possible games contained in a chess than there are atoms in the universe.`, 
     `Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles?`, 
-    `Did you know, that the Dunbar Number postulates that our brain is capabale of maintaing roughly 150 meaningful relationships with other people?`, 
-    ``
+    `Did you know, that the Dunbar Number postulates that our brain is capable of maintaing roughly 150 meaningful relationships with other people?`, 
+    `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`
 ]
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
@@ -202,13 +215,18 @@ function readOutLoud(message){
         console.log(finalText)
         speech.text = finalText; 
     } 
-      if(message.includes(`lyrics`) && (`song`)){
+      if(message.includes((`lyrics`) && (`song`))){
         const finalText = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
         console.log(finalText)
         speech.text = finalText; 
     }
      if(message.includes(`stupid`)){
         const finalText = retorts[Math.floor(Math.random() * retorts.length)]
+        console.log(finalText)
+        speech.text = finalText; 
+    }
+     if(message.includes((`facts`) && ('fact'))){
+        const finalText = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
         console.log(finalText)
         speech.text = finalText; 
     }
