@@ -68,3 +68,18 @@
   background: #1ddced;
   order: -1;
 }
+
+.chat-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-form textarea {
+  background: #fbfbfb;
+  width: 75%;
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  resize: none;
+}
