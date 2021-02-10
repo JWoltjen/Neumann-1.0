@@ -162,8 +162,10 @@ const amazingFacts = [
     `Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
     `There are more possible games contained in a chess than there are atoms in the universe.`, 
     `Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles?`, 
-    `Did you know, that the Dunbar Number postulates that our brain is capable of maintaing roughly 150 meaningful relationships with other people?`, 
-    `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`
+    `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
+    `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
+    `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time they develop the ability to crawl? The mechanism responsible for this is called the reticular-activating system.`, 
+
 ]
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
@@ -215,7 +217,7 @@ function readOutLoud(message){
         console.log(finalText)
         speech.text = finalText; 
     } 
-      if(message.includes((`lyrics`) && (`song`))){
+      if(message.includes((`lyrics`) || (`song`))){
         const finalText = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
         console.log(finalText)
         speech.text = finalText; 
@@ -225,7 +227,7 @@ function readOutLoud(message){
         console.log(finalText)
         speech.text = finalText; 
     }
-     if(message.includes((`facts`) && ('fact'))){
+     if(message.includes((`facts`) || ('fact'))){
         const finalText = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
         console.log(finalText)
         speech.text = finalText; 
