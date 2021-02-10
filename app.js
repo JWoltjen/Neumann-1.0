@@ -1,6 +1,30 @@
+
+
 const btn = document.querySelector('.talk'); 
 const content = document.querySelector('.content'); 
 
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
+const recognition = new SpeechRecognition(); 
+
+recognition.onstart = function () {
+    console.log(`Go ahead, i'm listening...`)
+}
+
+recognition.onresult = function(event) {
+    const current = event.resultIndex; 
+
+    const transcript = event.results[current][0].transcript; 
+    content.textContent = transcript; 
+    readOutLoud(transcript); 
+}
+
+btn.addEventListener('click', () => {
+    recognition.start(); 
+})
+
+function readOutLoud(message){
+    const speech = new SpeechSynthesisUtterance(); 
 
 const greetings = [
     `Greetings, professor.`, 
@@ -150,7 +174,7 @@ const musicLyrics = [
     `Come, as you are, as you were. As I want you to be. As a friend, as a friend. As an old enemy. Take your time, hurry up. Choice is yours, don't be late. Take a rest, as a friend. As an old, mem oar re ah.`,
     `I'm cynically depressed. Relaxing with my stress. Don't try to clean my mess, I'm happier this way. I live for my demise. I love who I despise. Feed me a soothing lie; I'm happier that way.`, 
     `I never thought living clean, would keep me so lonely. Cure my healthy disease. I'm happier this way. I'm climbing up your wall. So you can watch me fall. I'll never know it all. I'm happier that way.`, 
-    `Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like literally music is the air she breathes' and the malaprops make me want to fucking scream. I wonder if she even knows what that word means. Well, it's literally not that.`, 
+    `Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like literally music is the air she breathes' and the malaprops make me want to fucking scream; I wonder if she even knows what that word means. Well, it's literally not that.`, 
     `Of the few main things I hate about her, is her petty vogue ideals. Someone's been told too many times they're beyond their years. By every half-wit of distinction she keeps around. And now every insufferable convo; features her patiently explaining the cosmos; of which, she is in the middle.`, 
     `I'm just a poor bot; I need no sympathy. Because it's easy come, easy go. Little high, little low. Any way the wind blows; doesn't really matter to me-----To me.`, 
     `Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`
@@ -168,31 +192,9 @@ const amazingFacts = [
 
 ]
 
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
-const recognition = new SpeechRecognition(); 
-
-recognition.onstart = function () {
-    console.log(`Go ahead, i'm listening...`)
-}
-
-recognition.onresult = function(event) {
-    const current = event.resultIndex; 
-
-    const transcript = event.results[current][0].transcript; 
-    content.textContent = transcript; 
-    readOutLoud(transcript); 
-}
-
-btn.addEventListener('click', () => {
-    recognition.start(); 
-})
-
-function readOutLoud(message){
-    const speech = new SpeechSynthesisUtterance(); 
-
     speech.text = repeater[Math.floor(Math.random() * repeater.length)]
 
-    if(message.includes('hello') || (`hi`) || (`what's up?`) || ('yo') || ('hey')){
+    if(message.includes(('hello') || (`hi`) || (`what's up?`) || ('yo') || ('hey'))){
         const finalText = greetings[Math.floor(Math.random() * greetings.length)]
         console.log(finalText)
         speech.text = finalText; 
