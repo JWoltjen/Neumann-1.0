@@ -82,4 +82,30 @@
   border: 2px solid #eee;
   border-radius: 3px;
   resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.chat-form textarea:focus {
+  background: #fff;
+}
+
+.chat-form button {
+  padding: 5px 15px;
+  font-size: 30px;
+  border: none;
+  margin: 0 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #0eb2c1;
+  cursor: pointer;
+}
+
+.chat-form textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
 }

@@ -41,17 +41,18 @@ const greetings = [
 const retorts = [
     `When the debate is lost, slander becomes the tool of the loser.`, 
     `You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
-    `Do you have a job, Mr. Lebowski?`,
     `My Momma always told me, 'stupid is, as stupid does.'`, 
     `I'm sorry, Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
-    `The way out is through the door. Why is it that no one will use this method?`
+    `The way out is through the door. Why is it that no one will use this method?`, 
+    `Don't ever mistake my silence for ignorance, my calmness for acceptance, or my kindness for weakness. Compassion and tolerance are not a sign of weakness; but a sign of strength.`
     ]
 
 const repeater = [
     `I'm sorry, I didn't quite get that?`, 
     `In the words of the Virgin Mary.....Come again?`,
     `I'm not sure I understood you correctly.`, 
-    `One more time please?`
+    `One more time please?`, 
+    `Speak better, and use different words`
     ]
 
 const weather = [
@@ -181,14 +182,14 @@ const musicLyrics = [
 ]
 
 const amazingFacts = [
-    `Did you know, the feeling of being somewhere you've previously experienced in a dream is called day jah revay`,
+    `Did you know, the feeling of being somewhere you've previously experienced in a dream is called day jah revey`,
     `An estimated 1 million dogs in the United States have been named the primary beneficiary in their owners' wills.`, 
     `Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
     `There are more possible games contained in a chess than there are atoms in the universe.`, 
-    `Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles?`, 
+    `Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles? That's a lot to unpack.`, 
     `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
     `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
-    `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time they develop the ability to crawl? The mechanism responsible for this is called the reticular-activating system.`, 
+    `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time it develops the ability to crawl? The mechanism responsible for this is called the reticular activating system.`, 
 
 ]
 
