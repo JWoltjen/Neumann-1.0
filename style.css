@@ -51,3 +51,34 @@ a:hover {
 .darker p {
   background-color: #c0ffee;
 }
+
+.chat-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chat-container img {
+  float: left;
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.chat-container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
