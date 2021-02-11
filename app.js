@@ -175,6 +175,13 @@ const recognition = new SpeechRecognition();
 voice.addEventListener('click', () => {
     recognition.start(); 
 })
+recognition.onresult = (event) => {
+    const current = event.resultIndex; 
+    const transcript = event.results[current][0].transcript; 
+    var element = document.getElementById('container'); 
+    element.appendChild(addHumanText(transcript))
+    botVoice(transcript)
+}
 
 function addHumanText(text){
     const chatContainer = document.createElement('div'); 
@@ -191,7 +198,6 @@ function addBotText(text){
     const chatContainer1 = document.createElement('div'); 
     chatContainer1.classList.add('chat-container'); 
     chatContainer1.classList.add('darker'); 
-
     const chatBox1 = document.createElement('p'); 
     chatBox1.classList.add('voice2text'); 
     const chatText1 = document.createTextNode(text); 
@@ -205,29 +211,22 @@ function botVoice(message){
     speech.text = repeater[Math.floor(Math.random() * repeater.length)]
 
     if(message.includes(('hello') || (`hi`) || (`what's up?`) || ('yo') || ('hey'))){
-        const finalText = greetings[Math.floor(Math.random() * greetings.length)]
-        console.log(finalText)
-        speech.text = finalText; 
+        speech.text = greetings[Math.floor(Math.random() * greetings.length)]
     } 
     if(message.includes('weather')){
-        const finalText = weather[Math.floor(Math.random() * weather.length)]
-        console.log(finalText); 
-        speech.text = finalText; 
+        speech.text = weather[Math.floor(Math.random() * weather.length)]
     }
      if(message.includes(`how`) && ('are') && ('you')){
-        const finalText = conditions[Math.floor(Math.random() * conditions.length)]
+        speech.text = conditions[Math.floor(Math.random() * conditions.length)]
         console.log(finalText); 
-        speech.text = finalText; 
     }
      if(message.includes(`who`) && ((`made`) || (`built`) || (`programmed`)) && (`you`)){
-        const finalText = created[Math.floor(Math.random() * created.length)]
+        speech.text = created[Math.floor(Math.random() * created.length)]
         console.log(finalText); 
-        speech.text = finalText; 
     }
       if(message.includes('philosophy')){
-        const finalText = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
-        console.log(finalText)
-        speech.text = finalText; 
+        speech.text = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
+ 
     } 
       if(message.includes((`lyrics`) || (`song`))){
         const finalText = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
@@ -235,14 +234,12 @@ function botVoice(message){
         speech.text = finalText; 
     }
      if(message.includes(`stupid`)){
-        const finalText = retorts[Math.floor(Math.random() * retorts.length)]
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
         console.log(finalText)
         speech.text = finalText; 
     }
      if(message.includes((`facts`) || ('fact'))){
-        const finalText = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
-        console.log(finalText)
-        speech.text = finalText; 
+        speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
     }
 
     speech.volume = 1; 
@@ -257,11 +254,3 @@ recognition.onstart = () => {
     console.log(`Go ahead, i'm listening...`)
 }
 
-recognition.onresult = (event) => {
-    const current = event.resultIndex; 
-    const transcript = event.results[current][0].transcript; 
-    voice2text.textContent = transcript; 
-    var element = document.getElementById('container'); 
-    element.appendChild(addHumanText(transcript))
-    botVoice(transcript)
-}
