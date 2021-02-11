@@ -3,32 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Bot</title>
-    <link rel='stylesheet' type='text/css' href="style.css"> 
+    <title>ChatBot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-    <body>
-        <div class="chatbox">
-            <div class="chatlogs">
-                <div class='chat friend'> 
-                    <div class='user-photo'></div>
-                    <p class="chat-message">What's up, Brother??</p>
-                </div>
-                <div class='chat bot'>
-                    <div class='bot-photo'></div>
-                    <p class="chat-message">I am a bot</p>
-                </div>
-                <div class='chat friend'>
-                    <div class='user-photo'></div>
-                    <p class="chat-message">The your happiness depends on the quality of your thoughts.</p>
-                </div>
-            </div>
-            <div class="chat-form"> 
-                <textarea></textarea>
-                <button>Send</button>
-                <button class="talk">Talk</button> 
-            </div>
+<body>
+    <div id="container">
+        <a class="voice" href="#">Activate Voice</a>
+        <div class='chat-container'>
+            <p class='voice2text'>Hi there</p>
         </div>
-        <h3 class="content"></h3>
-        <script src="app.js"></script>
-    </body>
+        <div class='chat-container darker'>
+            <p class='voice2text'>Hello</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>

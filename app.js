@@ -1,30 +1,48 @@
+ 
+const voice = document.querySelector('.voice');
+const voice2text = document.querySelector('.voice2text'); 
 
-
-const btn = document.querySelector('.talk'); 
-const content = document.querySelector('.content'); 
 
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; 
 const recognition = new SpeechRecognition(); 
 
-recognition.onstart = function () {
+recognition.onstart = () => {
     console.log(`Go ahead, i'm listening...`)
 }
 
-recognition.onresult = function(event) {
+recognition.onresult = (event) => {
     const current = event.resultIndex; 
-
     const transcript = event.results[current][0].transcript; 
-    content.textContent = transcript; 
-    readOutLoud(transcript); 
+    voice2text.textContent = transcript; 
+    var element = document.getElementById('container'); 
+    element.appendChild(readOutLoud(transcript))
 }
 
-btn.addEventListener('click', () => {
+voice.addEventListener('click', () => {
     recognition.start(); 
 })
 
+// typebtn.addEventListener('click', addHumanText)
+
+function addHumanText(text){
+    const chatContainer = document.createElement('div'); 
+    chatContainer.classList.add("chat-container"); 
+    
+    const chatBox = document.createElement('p'); 
+    chatBox.classList.add('voice2text')
+
+    const chatText = document.createTextNode(text); 
+    chatBox.appendChild(chatText); 
+
+    chatContainer.appendChild(chatBox); 
+    return chatContainer; 
+}
+
 function readOutLoud(message){
     const speech = new SpeechSynthesisUtterance(); 
+
+
 
 const greetings = [
     `Greetings, professor.`, 
