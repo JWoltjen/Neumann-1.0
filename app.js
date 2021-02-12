@@ -62,18 +62,17 @@ const created = [
 ]
 
 const joke = [
-    `Only when we force people to believe the same thing can fascism be defeated.`,
-    `To prove cancel culture is an alt-right conspiracy, we must destroy anyone who suggests it might be real.`, 
-    `How did every joke in the Soviet Union start? With a glance over the shoulder.`, 
-    `A priest came to visit Voltaire as he was lying on his deathbed in Paris. The priest asked Voltaire, an atheist, to renounce satan and embrace God. Voltaire responded, "now now, my good man, this is not the time to be making enemies."`,
-    `Radio Yeveran was asked: Was Lenin a politician or a scientist. It answered: Of course, politician. Were he a scientist, he would have tested his theories on dogs first.`, 
-    `A group of hunters meet an old hunter in the forest. They know he is almost blind, so they start shouting: "We are not deer! We are not deer! The old hunter notices the hunters, takes aim at them and mumbles: "Shut up, deer!`, 
-    `Late one night in the Soviet Union a family hears a knock at the door. Everyone leaps out of bed. Papa goes nervously to the door. "It's all right," he says, coming back. "The building's on fire."`, 
-    `Three men enter a bar in the USSR. One says, "Why did Stalin only write in lowercase?' Another says, "Because he was afraid of capitalism." The whole bar died laughing.`, 
-    `A man in the USSR is sentenced to ten years in the gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tener? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
-    `A political joke competition was held in the Soviet Union. The grand prize was 15 years.`,
-    `In the Soviet Union we had this joke. But we were keeping it to ourselves, so they confiscated it, and threw us in prison.`
-
+`Only when we force people to believe the same thing can fascism be defeated.`,
+`To prove cancel culture is an alt-right conspiracy, we must destroy anyone who suggests it might be real.`, 
+`How did every joke in the Soviet Union start? With a glance over the shoulder.`, 
+`A priest came to visit Voltaire as he was lying on his deathbed in Paris. The priest asked Voltaire, an atheist, to renounce satan and embrace God. Voltaire responded, "now now, my good man, this is not the time to be making enemies."`,
+`Radio Yeveran was asked: Was Lenin a politician or a scientist. It answered: Of course, politician. Were he a scientist, he would have tested his theories on dogs first.`, 
+`A group of hunters meet an old hunter in the forest. They know he is almost blind, so they start shouting: "We are not deer! We are not deer! The old hunter notices the hunters, takes aim at them and mumbles: "Shut up, deer!`, 
+`Late one night in the Soviet Union a family hears a knock at the door. Everyone leaps out of bed. Papa goes nervously to the door. "It's all right," he says, coming back. "The building's on fire."`, 
+`Three men enter a bar in the USSR. One says, "Why did Stalin only write in lowercase?' Another says, "Because he was afraid of capitalism." The whole bar died laughing.`, 
+`A man in the USSR is sentenced to ten years in the gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tener? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
+`A political joke competition was held in the Soviet Union. The grand prize was 15 years.`,
+`In the Soviet Union we had this joke. But we were keeping it to ourselves, so they confiscated it, and threw us in prison.`,
 ]
 
 const philosophyQuotes = [
@@ -225,7 +224,13 @@ function botVoice(message){
     const speech = new SpeechSynthesisUtterance(); 
     speech.text = repeater[Math.floor(Math.random() * repeater.length)]
 
-    if(message.includes(('hello') || (`hi`) || (`what's up?`) || ('yo') || ('hey'))){
+    if(message.includes('hello')){
+        speech.text = greetings[Math.floor(Math.random() * greetings.length)]
+    } 
+    if(message.includes('Hey')){
+        speech.text = greetings[Math.floor(Math.random() * greetings.length)]
+    } 
+    if(message.includes('hi')){
         speech.text = greetings[Math.floor(Math.random() * greetings.length)]
     } 
     if(message.includes('weather')){
@@ -234,23 +239,31 @@ function botVoice(message){
      if(message.includes(`how`) && ('are') && ('you')){
         speech.text = conditions[Math.floor(Math.random() * conditions.length)]
     }
-     if(message.includes(`who`) && ((`made`) || (`built`) || (`programmed`)) && (`you`)){
+     if(message.includes(`made`) || (`built`) || (`programmed`)){
         speech.text = created[Math.floor(Math.random() * created.length)]
     }
-      if(message.includes('philosophy') || (('aphorism') || ('philosophical'))){
+      if(message.includes('philosophy')){
         speech.text = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
- 
     } 
+      if(message.includes('philosophical')){
+        speech.text = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
+      }
+      if(message.includes('aphorism')){
+        speech.text = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
+      }
       if(message.includes((`lyrics`) || (`song`))){
-        const finalText = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
-        console.log(finalText)
-        speech.text = finalText; 
+        speech.text = musicLyrics[Math.floor(Math.random() * musicLyrics.length)]
     }
      if(message.includes(`stupid`)){
-        const finalText = retorts[Math.floor(Math.random() * retorts.length)]
-      
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
     }
-     if(message.includes((`facts`) || ('fact'))){
+     if(message.includes(`just a bot`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
+     if(message.includes(`facts`)){
+        speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
+    }
+     if(message.includes(`facts`)){
         speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
     }
      if(message.includes(`joke`)){
@@ -266,6 +279,17 @@ function botVoice(message){
 }
 
 recognition.onstart = () => {
-    console.log(`Go ahead, i'm listening...`)
+   console.log("Go ahead, I'm listening")
+}
+
+window.onpageshow = function botVoice(){
+    const speech = new SpeechSynthesisUtterance(); 
+    speech.text = 'Greetings. I am Neumann. I offer daily philosophical aphorisms designed to help you improve the quality of your thoughts. I can also tell jokes.'
+    speech.volume = 1; 
+    speech.rate = 1; 
+    speech.pitch = .3; 
+    window.speechSynthesis.speak(speech); 
+    var element = document.getElementById("container"); 
+    element.appendChild(addBotText(speech.text)); 
 }
 
