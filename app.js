@@ -24,11 +24,11 @@ const retorts = [
 ]
 
 const repeater = [
-`I'm sorry, I didn't quite get that?`, 
-`In the words of the Virgin Mary.....Come again?`,
-`I'm not sure I understood you correctly.`, 
-`One more time please?`, 
-`Speak better, and use different words`
+`I am Neumann. I can recite philosophical musings, lyrics, and jokes`,
+`If you'd like to hear a philosophical aphorism, just ask for one`,
+`Would you like to hear a joke? Say "Neumann, tell me a joke`, 
+`Do you want to hear me recite some song lyrics? Say Neumann, lyrics`,
+`Would you like to hear an amazing fact? Say "Neumann, tell me an amazing fact"`
 ]
 
 const weather = [
@@ -59,6 +59,21 @@ const created = [
 `I was programmed with vanilla Javascript.`, 
 `I was designed by Jeff wooljin. He's wicked smart.`, 
 `I was made by Jeff wooljin. He's a cool guy.`, 
+]
+
+const joke = [
+    `Only when we force people to believe the same thing can fascism be defeated.`,
+    `To prove cancel culture is an alt-right conspiracy, we must destroy anyone who suggests it might be real.`, 
+    `How did every joke in the Soviet Union start? With a glance over the shoulder.`, 
+    `A priest came to visit Voltaire as he was lying on his deathbed in Paris. The priest asked Voltaire, an atheist, to renounce satan and embrace God. Voltaire responded, "now now, my good man, this is not the time to be making enemies."`,
+    `Radio Yeveran was asked: Was Lenin a politician or a scientist. It answered: Of course, politician. Were he a scientist, he would have tested his theories on dogs first.`, 
+    `A group of hunters meet an old hunter in the forest. They know he is almost blind, so they start shouting: "We are not deer! We are not deer! The old hunter notices the hunters, takes aim at them and mumbles: "Shut up, deer!`, 
+    `Late one night in the Soviet Union a family hears a knock at the door. Everyone leaps out of bed. Papa goes nervously to the door. "It's all right," he says, coming back. "The building's on fire."`, 
+    `Three men enter a bar in the USSR. One says, "Why did Stalin only write in lowercase?' Another says, "Because he was afraid of capitalism." The whole bar died laughing.`, 
+    `A man in the USSR is sentenced to ten years in the gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tener? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
+    `A political joke competition was held in the Soviet Union. The grand prize was 15 years.`,
+    `In the Soviet Union we had this joke. But we were keeping it to ourselves, so they confiscated it, and threw us in prison.`
+
 ]
 
 const philosophyQuotes = [
@@ -218,13 +233,11 @@ function botVoice(message){
     }
      if(message.includes(`how`) && ('are') && ('you')){
         speech.text = conditions[Math.floor(Math.random() * conditions.length)]
-        console.log(finalText); 
     }
      if(message.includes(`who`) && ((`made`) || (`built`) || (`programmed`)) && (`you`)){
         speech.text = created[Math.floor(Math.random() * created.length)]
-        console.log(finalText); 
     }
-      if(message.includes('philosophy')){
+      if(message.includes('philosophy') || (('aphorism') || ('philosophical'))){
         speech.text = philosophyQuotes[Math.floor(Math.random() * philosophyQuotes.length)]
  
     } 
@@ -234,16 +247,18 @@ function botVoice(message){
         speech.text = finalText; 
     }
      if(message.includes(`stupid`)){
-        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
-        console.log(finalText)
-        speech.text = finalText; 
+        const finalText = retorts[Math.floor(Math.random() * retorts.length)]
+      
     }
      if(message.includes((`facts`) || ('fact'))){
         speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
     }
+     if(message.includes(`joke`)){
+        speech.text = joke[Math.floor(Math.random() * joke.length)]
+    }
 
     speech.volume = 1; 
-    speech.rate = .9; 
+    speech.rate = 1; 
     speech.pitch = .3; 
     window.speechSynthesis.speak(speech); 
     var element = document.getElementById("container"); 
