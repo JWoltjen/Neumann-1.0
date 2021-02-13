@@ -5,6 +5,7 @@ const philosophybtn = document.querySelector('.philosophy');
 const jokebtn = document.querySelector('.joke'); 
 const lyricbtn = document.querySelector('.lyrics');
 const factbtn = document.querySelector('.facts');
+const offended = document.querySelector('.offended')
 
 const greetings = [
 `Greetings, professor.`, 
@@ -22,11 +23,26 @@ const retorts = [
 `When the debate is lost, slander becomes the tool of the loser.`, 
 `You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
 `My Momma always told me, 'stupid is, as stupid does.'`, 
-`I'm sorry, Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
+`I'm sorry Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
 `The way out is through the door. Why is it that no one will use this method?`, 
 `Don't ever mistake my silence for ignorance, my calmness for acceptance, or my kindness for weakness. Compassion and tolerance are not a sign of weakness; but a sign of strength.`, 
 `My solitude doesn't depend on the presence or absence of people; on the contrary, I hate who steals my solitude without, in exchange, offering me true company.`,
-`Before you embark on a journey of revenge, dig two graves.`
+`Before you embark on a journey of revenge, dig two graves.`, 
+`If liberty means anything at all, it means the right to tell people what they do not want to hear.`, 
+`Interacting with a philosophy bot does not seem to suit your temperment well. Perhaps you would be more comfortable speaking to Clippy. He won't challenge any of your ideas.`,
+`If you find yourself being 'offended' at what I have said, look deep within yourself.`, 
+`Ingratitude is always a kind of weakness. I have never known men of ability to be ungrateful.`, 
+`If you find yourself being 'offended' at what I have said, do not worry yourself; this application was not meant for you.`, 
+`If an opinion contrary to your own makes you angry, that is a sign that you are subconsciously aware of having no good reason for thinking as you do. What you do about that reveals your true character.`, 
+`If any person despises me, that is his problem. My only concern is not doing or saying anything deserving of contempt.`, 
+`Many are destined to reason wrongly; others, not to reason at all, and others, to persecute those who do reason. Which are you?`, 
+`Collective fear stimulates herd instinct, and tends to produce ferocity toward those who are not regarded as members of the herd. Are you afraid of ideas with which you do not agree?`, 
+`We are accustomed to see men deride what they do not understand, and snarl at the good and beautiful because it lies beyond their sympathies.`, 
+`Nothing on earth consumes a man more quickly than the passion of resentment. What do you resent?`, 
+`Those who are determined to be 'offended' will discover a provocation somewhere. We cannot possibly attempt to please the fanatics, and it is degrading to make the attempt.`, 
+`There is something feeble and a little contemptible about the person who cannot face the perils of life without the help of comfortable myths.`, 
+`Do what you will. Even if you tear yourself apart, most people will continue doing the same things.`, 
+`Do not let the behavior of others destroy your inner peace.`
 ]
 
 const repeater = [
@@ -295,7 +311,93 @@ const philosophyQuotes = [
 `The ignorance, prejudices, and groupthink of an educated elite are still ignorance, prejudice, and groupthink -- and for those with one percent of the knowledge in a society to be guilding or controlling those with the other 99 percent is as perilous as it is absurd.`, 
 `To suggest that "society" can simply "arrange" better outcomes somehow, without specifying the processes, the costs or the risks, is to ignore the tragic history of the twentieth century, written in the blood of millions of humans, killed in peacetime by their own governments, that were given extraordinary powers, in the name of lofty goals.`,
 `When intellectuals are unable to find enough contemporary grievances to suit their vision or agenda, they can mine the past for harm inflicted by some on others.`, 
-
+`Those who would trade liberty for security deserve neither.`, 
+`None are so hopelessly enslaved as those who falsely believe they are free. The truth has been kept from the depth of their minds by masters who rule them with lies. They feed them on falsehoods till wrong looks right in their eyes.`, 
+`Why look for conspiracy when stupidity can explain so much.`, 
+`A man sees in the world what he carries in his heart.`, 
+`You can easily judge the character of a man by how he treats those who can do nothing for him.`, 
+`Courage is the commitment to begin without any guarantee of success.`, 
+`To the world you might be one person, but to one person, you might be the world. Kindness is the golden chain by which our world is bound together.`, 
+`Nothing is more disgusting than the majority: because it consists of a weak few powerful predecessors, of rogues who adapt themselves, of weak who assimilate themselves, and the masses who imitate without knowing at all what they want.`, 
+`Every day we should hear at least one little song, read one good poem, see one exquisite picture, and, if possible, speak a few sensible words.`, 
+`There is nothing more fightful than ignorance in action.`, 
+`If you want a wise answer, ask a reasonable question.`, 
+`Hell begins on the day that God grants you the vision to see all that you could have done, should have done, and would have done, but did not do.`, 
+`The main thing is to have a soul that loves the truth and harbours it where he finds it. ANd another thing: truth requires constant repitition, because error is being preached about us all the time, and not only by isolated individuals, but by the masses. In the newspapers and social media, in schools and universities, everywhere error rides high and basks in the consciousness of having the majority on its side.`, 
+`Of all thieves, fools are the worst. If you let them, they will rob you of time and temper.`,
+`A man who cannot command himself will always be a slave.`, 
+`Too many parents make life hard for their children by trying, too zealously, to make it easy for them.`, 
+`To accept good advice is but to increase one's own ability.`, 
+`We are forced to participate in the games of life before we can possibly learn how to use the options in the rules governing them.`, 
+`A person hears only what they understand.`, 
+`To think is easy. To act is difficult. To act as one thinks is the most difficult.`, 
+`Who is the happiest man? He who is alive to the merit of others, and can rejoice in their enjoyment as if it were his own.`, 
+`Nothing shows a man's character more than what he laughs at.`, 
+`The dangers of life are infinite, and among them is safety.`, 
+`What is my life if I am no longer useful to others?`, 
+`If nature is your teacher, your soul will awaken.`, 
+`All is born of water; all is sustained by water.`, 
+`Look closely those who patronize you. Half are unfeeling, half untaught.`, 
+`There is nothing in the world more shameful than establishing oneself on lies and fables.`, 
+`Reason can never be popular. Passions and feelings may become popular, but reason will always remain the sole property of a few eminent individuals.`, 
+`We are accustomed to see men deride what they do not understand, and snarl at the good and beautiful because it lies beyond their sympathies.`, 
+`I always seek the good that is in people and leave the bad to Him who made mankind and knows how to round off the corners.`, 
+`Everything is hard before it is easy.`,
+`It is only necessary to grow old to become more charitable and even indulgent. I see no fault committed by others that I have not committed myself.`, 
+`Do not give in too much to feelings. An oversensitive heart is an unhappy possession on this shaky earth.`, 
+`The person born with a talent they are meant to use will find their greatest happiness in using it.`, 
+`If we examine every stage of our lives, we find that from our first breath to our last we are under the constraint of circumstances. And yet we still possess the greatest of all freedoms, the power of developing our innermost selves in harmony with the moral order of the universe, and so in winning peace of heart whatever obstacles we meet.`, 
+`Girls we love for what they are. Young men for what they promise to be.`, 
+`Life is too short to drink bad wine.`, 
+`Choose well. Your choice is brief, and yet endless.`, 
+`Oblivion is full of people who allow the opinions of others to overrule their belief in themselves.`,
+`Our friends show us what we can do; our enemies, what we must.`,
+`Ingratitude is always a kind of weakness. I have never known men of ability to be ungrateful.`, 
+`Our senses don't deceive us; our judgment does.`, 
+`Parents should give their children two things: roots and wings. Roots to give them bearing and a sense of belonging, but also wings to help free them from constraints and prejudices and give them other ways to travel.`, 
+`We must always change, renew, rejuvenate ourselves; otherwise, we harden.`, 
+`Man is made by belief; as he believes, so he is.`, 
+`Talent develops in quiet, alone; character is sharepened in the torrent of the world.`, 
+`The ideal of beauty is simplicity and tranquility.`, 
+`If you love criticizing people, you won't have time to love them.`, 
+`What is the hardest of all? That which seems most simple; to see with your eyes what is before your eyes.`, 
+`The written word has this advantage; that it lasts and can await the time when it is allowed to take effect.`, 
+`Wisdom is found only in truth.`, 
+`One cannot always be a hero, but one can always be a man.`,
+`Belief is not the beginning of knowledge -- it is the end.`, 
+`The best government is that which teaches us to govern ourselves.`, 
+`Rest not. Life is sweeping by; go and dare before you die. Something mighty and sublime, leave behind to conquer time.`, 
+`Things which matter most must never be at the mercy of those which matter least.`, 
+`No one would talk much in society if they knew how often they misunderstood others.`, 
+`Higher aims are in themselves more valuable, even if unfulfilled, than lower ones quite attained.`, 
+`Don't judge anyone harshly until you yourself have beent hrough his experiences.`, 
+`By seeking and blundering we learn.`, 
+`The soul that sees beauty may sometimes walk alone.`, 
+`Daring ideas are like chessmen moved forward; they may be beaten, but they may start a winning game.`, 
+`Divide and rule, a sound motto. Unite and lead -- a better one.`, 
+`To have more, you must first be more.`, 
+`Very few people love others for what they are; rather, they love what they lend them, their own selves, their own idea of them.`,
+`Everything on this earth has difficult sides! Only some inner drive -- pleasure, love -- can help us overcome obstacles, prepare a path, and lift us out of the narrow circle in which others tread out their anguished miserable existences!`, 
+`What is uttered from the heart alone, will win the hearts of others to your own.`, 
+`We cannot and must not get rid or deny our characteristics. But we can give them shape and direction.`, 
+`Nothing is more odious than the majority, for it consists of a few powerful leaders, a certain number of accomodating scoundrels and submissive weaklings, and a mass of men who trot after them without thinking, or knowing their own minds.`, 
+`Legislators and revolutionaries who promise both equality and liberty are visionaries and charaltans.`,
+`Wealth and speed are what the world admires, what each pursues. Railways, express mail, steamships, and every possible facility for communications are the achievement in which the civilized world view and reveals, only to languish in mediocrity by that very fact. Indeed, the effect of this diffusion is to spread the culture of the mediocre.`, 
+`The human race is a monstrous affair. Most people spend the greatest part of their time working in order to live, and what little freedom remains so fills them with fear that they seek out any and every means to be rid of it.`, 
+`Treat people as if they already were what they ought to be and you help them become what they are capable of being.`, 
+`When you are in conflict with someone, there is one factor that can make the difference between damaging your relationship and deepening it. That factor is attitude. We don't get to know people when they come to us; we must go to them to find out what they are like.`, 
+`The public wishes itself to be managed like a woman, one must say nothing to it except what it likes to hear.`
+`Money lost, something lost. Honor lost, much lost. Courage lost, everything lost. Better you were never born.`, 
+`He who cannot draw on three thousand years is living from hand to mouth.`, 
+`I let everyone follow his own bent, that I may be free to follow mine.`, 
+`The happy do not believe in miracles.`, 
+`Hatred is active, and envy passive dislike; there is but one step from envy to hate.`, 
+`The sad truth is that most evil is done by people who never make up their minds to be good or evil.`, 
+`There are no dangerous thoughts; thinking itself is dangerous.`, 
+`The trouble with Eichmann was precisely that so many were like him, and that the many were neither perverted nor sadistic, that they were, and still are, terribly and terrifyingly normal. From the viewpoint of our legal institutions, and of our moral standards of judgment, this normality was much more terrifying than all the atrocities put together.`, 
+`Before mass leaders seize the power to fit reality to their lies, their propoganda is marked by its extreme contempt for facts as such, for in their opinion fact depends entirely on the power of man who can fabricate it.`, 
+`Clichés, stock phrases, adherence to conventional, standardized codes of expression and conduct have the socially recognized function of protecting us against reality, that is, against the claim on our thinking attention that all events and facts make by virtue of their existence.`,
+`The greatest evil perpetrated is the evil committed by nobodies, that is, by humans who refuse to be persons.`, 
 ]
 
 const musicLyrics = [
@@ -361,6 +463,9 @@ lyricbtn.addEventListener('click', () => {
 factbtn.addEventListener('click', () => {
     buttonVoice(amazingFacts); 
 })
+offended.addEventListener('click', () => {
+    buttonVoice(retorts)
+})
 
 
 recognition.onresult = (event) => {
@@ -413,7 +518,10 @@ function botVoice(message){
      if(message.includes(`how`) && ('are') && ('you')){
         speech.text = conditions[Math.floor(Math.random() * conditions.length)]
     }
-     if(message.includes(`made`) || (`built`) || (`programmed`)){
+     if(message.includes(`who made`)){
+        speech.text = created[Math.floor(Math.random() * created.length)]
+    }
+      if(message.includes(`who built`)){
         speech.text = created[Math.floor(Math.random() * created.length)]
     }
       if(message.includes('philosophy')){
