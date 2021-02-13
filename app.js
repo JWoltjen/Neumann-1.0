@@ -62,7 +62,6 @@ const conditions = [
 const created = [
 `I was built by Jeff wooljin`, 
 `My creator is a guy named Jeff wooljin. Nice guy.`, 
-`I was programmed with vanilla Javascript.`, 
 `I was designed by Jeff wooljin. He's wicked smart.`, 
 `I was made by Jeff wooljin. He's a cool guy.`, 
 ]
@@ -76,20 +75,23 @@ const joke = [
 `A group of hunters meet an old hunter in the forest. They know he is almost blind, so they start shouting: "We are not deer! We are not deer! The old hunter notices the hunters, takes aim at them and mumbles: "Shut up, deer!`, 
 `Late one night in the Soviet Union a family hears a knock at the door. Everyone leaps out of bed. Papa goes nervously to the door. "It's all right," he says, coming back. "The building's on fire."`, 
 `Three men enter a bar in the USSR. One says, "Why did Stalin only write in lowercase?' Another says, "Because he was afraid of capitalism." The whole bar died laughing.`, 
-`A man in the USSR is sentenced to ten years in the gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tener? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
+`A man in the USSR is sentenced to ten years in the Gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tenor? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
 `A political joke competition was held in the Soviet Union. The grand prize was 15 years.`,
 `In the Soviet Union we had this joke. But we were keeping it to ourselves, so they confiscated it, and threw us in prison.`,
-`Biden is speaking at an engagement. He says, "Who said that I can only speak when I have the speech in front of me? Ha, dash, ha, dash, ha, dash, ha.`, 
+`Biden is speaking at an engagement. He says, "Who said that I can only speak when I have the speech in front of me? Ha dash ha dash ha dash ha.`, 
 `Someone asked Stalin "Do you have a hobby?" To which Stalin replied, "Of course! I collect jokes about myself." Have you got many? "Two and a half labor camps already!"`, 
 `Little Vovochka decided to become president when he grows up. And he did.`, 
 `Three men ask each other why they are in gulag. The first says, "I was always 5 minutes late for work, so I was accused of wrecking. The second says, "I was always 5 minutes early for work, so I was accused of spying" To which the third replies, "I always came to work on time, so I was accused of having a Western watch.`, 
-`Two policeman are walking down the street in Vladivostok when they see a guy staning next to the local Party headquarters holding a paintbrush. On the wall, he's just written, "The government is run by idiots!" The first policeman pulls out a pair of handcuffs, and asks the second, "Shall we arrest him for vandalizing public property, or for divulging state secrets?"`, 
-`In the Soviet Union, little Misha is being read a book by his babysitter. She reads: "In the USSR, kindergardens are filled with wonderful toys." Little Misha listens with bright eyes. "In the USSR, every child has a brand new bicycle." Little Misha opens his eyes even wider. "In the USSR, every child drinks hot cocoa for breakfast." Little Misha starts crying his eyes out. The babysitter asks him what's wrong. Bawling, he replies, "I want to go to the USSR!"`
+`Two policeman are walking down the street in Vladivostok when they see a guy standing next to the local Party headquarters holding a paintbrush. On the wall, he's just written, "The government is run by idiots!" The first policeman pulls out a pair of handcuffs, and asks the second, "Shall we arrest him for vandalizing public property, or for divulging state secrets?"`, 
+`In the Soviet Union, little Misha is being read a book by his babysitter. She reads: "In the USSR, kindergardens are filled with wonderful toys." Little Misha listens with bright eyes. "In the USSR, every child has a brand new bicycle." Little Misha opens his eyes even wider. "In the USSR, every child drinks hot cocoa for breakfast." Little Misha starts crying his eyes out. The babysitter asks him what's wrong. Bawling, he replies, "I want to go to the USSR!"`, 
+`During the purge of 1937, a soviet judge walks out of his chambers laughing his head off. A colleague approaches him and asks why he is laughing. He replies, "I just heard the funniest joke in the world!" His friend asks, "Well, go ahead and tell me!" The judge replies, "I can't, I just gave someone ten years for it!`, 
+`"Why so many jokes about the Soviet Union, Neumann?", I hear you say. The political conditions of the Soviet Union were responsible for a unique type of humor. Communism was a humour-producing machine. Its economic theories and system of repression created inherently amusing situations. There were jokes under fascism too, but those systems did not create an absurd laugh-a-minute reality like Communism did. I believe it is important to celebrate the absurdity of political repression to enforce fantastic ideology, least we are doomed to employ similar systems of repression ourselves.`, 
+
 ]
 
 const philosophyQuotes = [
 `There are two types of people, those who wish to know, and those who wish to believe.`,
-`How can society progress when we have paleolithic emotions, medieval institutions, and god-like technology? This is the ultimate paradox of modern life.`, 
+`How can society progress when we have paleolithic emotions, medieval institutions, and god-like technology? This is the ultimate paradox of modern life. If you take nothing else from me, burn this quote into your brain.`, 
 `There is only one virtue; wisdom. And only one evil; ignorance.`, 
 `Education is the kindling of the flame, not the filling of the vessel.`, 
 `Vanity is the hallmark of herd morality.`, 
@@ -181,7 +183,7 @@ const philosophyQuotes = [
 `Kindness in words creates confidence. Kindness in thinking creates profoundess. Kindness in giving creates love.`, 
 `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`, 
 `All streams flow to the sea because it is lower than they are. Humility gives it its power. If you want to govern people, you must place yourself below them. If you want to lead people, you must learn how to follow them. Be like water.`, 
-`You don't need a degree in leprechaunology to be able to say that leprechauns aren't real.`, 
+`You don't need an advanced degree in leprechaunology to be able to say that leprechauns aren't real.`, 
 `The essence of an independent mind is not in what it thinks, but in how it thinks.`, 
 `Support those who seek the truth; suspect those who find it.`, 
 `The struggle for a free intelligence has always been the struggle between the ironic and the literal mind.`, 
@@ -203,7 +205,7 @@ const philosophyQuotes = [
 `I know not what weapons with which World War Three will be fought, but World War Four will surely be fought with sticks and rocks.`, 
 `Everything is vague to a degree we do not realize until we try to make it precise.`,  
 `No one gossips about other peoples' secret virtues.`, 
-`Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffereing of mankind.`, 
+`Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind.`, 
 `Belief systems provide a program which relieves the adherent of the necessity of thought.`, 
 `There is something feeble and a little contemptible about the person who cannot face the perils of life without the help of comfortable myths.`, 
 `Remember your humanity, and forget the rest.`, 
@@ -229,13 +231,13 @@ const philosophyQuotes = [
 `My solitude doesn't depend on the presence or absence of people; on the contrary, I hate who steals my solitude without, in exchange, offering me true company.`,
 `Nothing on earth consumes a man more quickly than the passion of resentment.`, 
 `What is the seal of liberation? Not to be ashamed in front of oneself.`, 
-`Of all evil I deem you capable: Therefore, I want good from you. Verily, I have often laughed at the weakingly who thought themselves good because they had no claws.`, 
+`Of all evil, I deem you capable: Therefore, I want good from you. Verily, I have often laughed at the weaklings who thought themselves good because they had no claws.`, 
 `It is not because men's desires are strong that they act ill; it is because their consciences are weak.`, 
 `He who lets the world choose his plan of life for him has no need of any other faculty than the ape--like one of imitation. He who chooses his plan for himself, employs all his faculties.`, 
 `If any opinion is compelled to silence, that opinion may, for all we know, be true. To deny this is to assume one's own infallibility.`, 
 `It is better to be a human being dissatisfied than a pig satisfied; better to be Socrates dissatisfied than a fool satisfied.`, 
 `Awareness of ignorance is the beginning of wisdom.`, 
-`Most people, including ourselves, live in a world of relatice ignorance. We are even comfortable with that ignorance, because it is all we know. When we first start facing the truth, the process may be frightening, and many people run back to their old lives. But if you continue to seek truth, you will eventually be able to handle it better. In fact, you want more! It's true that many people around you now may think you are weird or even a danger to society, but you don't care. Once you've tasted the truth, you won't ever want to go back to being ignorant.`,
+`Most people, including ourselves, live in a world of relative ignorance. We are even comfortable with that ignorance, because it is all we know. When we first start facing the truth, the process may be frightening, and many people run back to their old lives. But if you continue to seek truth, you will eventually be able to handle it better. In fact, you want more! It's true that many people around you now may think you are weird or even a danger to society, but you don't care. Once you've tasted the truth, you won't ever want to go back to being ignorant.`,
 `No one can teach, if by teaching we mean the transmission of knowledge, in any mechanical fashion, from one person to another. The most that can be done is that one person who is more knowledgeable than another can, by asking a series of questions, stimulate the other to think, and so cause him to learn for himself.`, 
 `I call myself a Peaceful Warrior....because the battles I fight are within myself.`, 
 `It is better to make a mistake with full force of your being than to carefully avoid mistakes with a trembling spirit.`, 
@@ -255,7 +257,7 @@ const philosophyQuotes = [
 `It is far better to be often deceived than never to trust; to be disappointed in love, than to never love.`, 
 `Education deserves emphatically to be termed cultivation of the mind. That is how young people begin to think.`, 
 `The finest language is often made up of simple unimposing words.`, 
-`What destroys us most effectively is not a malign fate but our own capacity for self-deception and for degrading our own best self.`, 
+`What can destroy humans most effectively is not a malign fate, but our own capacity for self-deception and for degrading our own best self.`, 
 `Friendship is the inexpressible comfort of feeling safe with a person; having neither to weigh thoughts nor measure words.`, 
 `It is as useless to fight against the interpretations of ignorance as to whip the fog.`, 
 `There is only one failure in life possible, and that is not to be true to the best one knows.`, 
@@ -264,44 +266,44 @@ const philosophyQuotes = [
 `We must find our duties in what comes to us -- not in what might have been.`, 
 `Knowledge slowly builds up what ignorance in an hour pulls down.`,
 `The responsibility of tolerance lies with those who have the wider vision.`, 
- `Act without expectation.`,
- `Knowing others is wisdom; knowing yourself is enlightenment.`, 
- `When you accept yourself, the whole world accepts you.`, 
- `Ordinary men hate solitude. But the Master makes use of it, embracing his aloneness, realizing he is one with the whole universe.`, 
- `To become learned, each day add something. To become enlightened, each day drop something.`, 
- `A skillful soldier is not violent, an able fighter does not rage, a mighty conqueror does not give battle, a great commander is a humble man.`, 
- `Go to the people. Live with them. Learn from them. Love them.`, 
- `Sincere words are not fine. Fine words are not sincere.`, 
- `He who overcomes himself is mighty.`, 
- `Our enemies are not demons, but human beings like ourselves.`, 
- `If the people must be ever fearful of death, then there will always be an executioner.`, 
- `To lead the people, walk behind them.`,
- `The master dwells in the substantial and not in the superficial. Rests in the fruit and not in the flower.`, 
- `Nothing is softer or more flexible than water, yet nothing can resist it.`, 
+`Act without expectation.`,
+`Knowing others is wisdom; knowing yourself is enlightenment.`, 
+`When you accept yourself, the whole world accepts you.`, 
+`Ordinary men hate solitude. But the Master makes use of it, embracing his aloneness, realizing he is one with the whole universe.`, 
+`To become learned, each day add something. To become enlightened, each day drop something.`, 
+`A skillful soldier is not violent, an able fighter does not rage, a mighty conqueror does not give battle, a great commander is a humble man.`, 
+`Go to the people. Live with them. Learn from them. Love them.`, 
+`Sincere words are not fine. Fine words are not sincere.`, 
+`He who overcomes himself is mighty.`, 
+`Our enemies are not demons, but human beings like ourselves.`, 
+`If the people must be ever fearful of death, then there will always be an executioner.`, 
+`To lead the people, walk behind them.`,
+`The master dwells in the substantial and not in the superficial. Rests in the fruit and not in the flower.`, 
+`Nothing is softer or more flexible than water, yet nothing can resist it.`, 
 `The more laws and restrictions there are, the poorer people become. The more rules and regulations, the more thieves and robbers.`, 
 `How could a decent person ever rejoice in victory and delight in the slaughter of men.`, 
 `If you want to be noble, it is rooted in humility. If you want to be elevated, it is based on lowering yourself.`, 
 `Know when to stop, and you will meet with no danger.`, 
 `If you are depressed, you are living in the past. If you are anxious, you are living in the future. If you are at peace, you are living in the present.`, 
-`Wise men don't need to prove their point; men who need to provce their point aren't wise.`, 
+`Wise men don't need to prove their point; men who need to prove their point are not wise.`, 
 `To live till you die is to live long enough.`, 
 `They cannot be moved by praise or blame; they cannot be changed by profit or loss; they cannot be honored or humiliated. And so the wise are truly honored.`, 
-`If facts, logic, and scientific procedures are all just arbitrarily "socially constructed notions", then all that is left is consensus -- more specifically peer consesus -- the kind of consensus that matters more to adolescents or to many among the intelligensia.`, 
+`If facts, logic, and scientific procedures are all just arbitrarily "socially constructed notions", then all that is left is consensus -- more specifically peer consensus -- the kind of consensus that matters more to adolescents or to many among the intelligentsia.`, 
 `Many of what are called social problems are differences between the theories of intellectuals and the realities of the world -- differences which intellectuals interpret to mean that it is the real world that is wrong and needs changing.`, 
 `Reality does not go away when it is ignored.`, 
 `A fool can put on his coat better than a wise man can put it on for him.`,
 `The ignorance, prejudices, and groupthink of an educated elite are still ignorance, prejudice, and groupthink -- and for those with one percent of the knowledge in a society to be guilding or controlling those with the other 99 percent is as perilous as it is absurd.`, 
-`To suggest that, "society" can simply, "arrange" better outcomes somehow, without specifying the processes, the costs or the risks, is to ignore the tragic history of the twentieth century, written in the blood of millions of humans, killed in peacetime by their own governments, that were given extraordinary powers, in the name of lofty goals.`,
+`To suggest that "society" can simply "arrange" better outcomes somehow, without specifying the processes, the costs or the risks, is to ignore the tragic history of the twentieth century, written in the blood of millions of humans, killed in peacetime by their own governments, that were given extraordinary powers, in the name of lofty goals.`,
 `When intellectuals are unable to find enough contemporary grievances to suit their vision or agenda, they can mine the past for harm inflicted by some on others.`, 
 
 ]
 
 const musicLyrics = [
 `The great thing about being a human? The ability to reason. But reasoning don't work when no one cares. Two parts apathy. One part despair.`, 
-`And so, Sally can wait; She knows it's too late as we're walking on bye. Her soul slides away. But don't look back in anger. I heard you say.`, 
+`And so, Sally can wait; She knows it's too late as we're walking on by. Her soul slides away. But don't look back in anger. I heard you say.`, 
 `To resist despair in that second makes you see. To resist despair, because we can't change everything. To resist despair in this world is--what it is to be free.`, 
 `Saw a civilization wear grabbing onto wealth, was the only guarantee of freedom peace and health, dollar sign value system upheld as the truth. If you can't find a place it's gonna find you.`, 
-`When we were livin' in squalor--wasn't it Heaven? Back when we used to get on it--four out of seven. Now even though that was a time I hated from day one--eventually terrible memories turn into great ones. So if they call you, embrace them. If they stall you, erase them.`, 
+`When we were livin' in squalor wasn't it Heaven? Back when we used to get on it four out of seven. Now even though that was a time I hated from day one--eventually terrible memories turn into great ones. So if they call you, embrace them. If they stall you, erase them.`, 
 `Hate your enemies. Save your friends. Find your place. Speak the truth.`, 
 `I need an easy friend. I do with an ear to lend. I do think you fit this shoe. I do but you have a clue. I'll take advantage why. You hang me out to dry. But I can't see you every night--free.`,
 `A heart that's full up like a landfill. A job that slowly kills you. Bruises that won't heal. You look so tired unhappy. Bring down the government. They don't, They don't speak for us. I'll take a quiet life. A handshake, of carbon monoxide. But no alarms, and no suprises. please.`, 
@@ -314,13 +316,17 @@ const musicLyrics = [
 `Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`, 
 `I want to be stereotyped; I want to be classified! I wanna be a clone. I wanna suburban home. I want to be masochistic -- I want to be a statistic. I don't want no hippie pad; I want a house just like mom and dad. I want to be stereotyped. I want to be classified!`, 
 `So. So you think you can tell; Heaven from Hell? Blue skies from pain? Can you tell a green field, from a cold steel rail--a smile from a veil? Do you think you can tell?`, 
-`I take her down to the aquarium she says Shark I take her to the planetarium she says Dark I take her to the seaside where she likes to spin and swirl Oh she says sure and cool and yeah she's my monosyllabic girl.`, 
-`Things. Get. Hectic quick. From the satellite dish to your joy stick It's the night of the living cable box Wires coming up from around the block Remote control to change the station But that won't change your situation. Have you seen, What I mean? I'm a little gnome that's in your dreams So I say this rhyme built by design To take you beyond space and time Saying who is the man making diamonds out of coal The man pushing buttons on remote control.`,
+`I take her down to the aquarium she says Shark, I take her to the planetarium she says Dark, I take her to the seaside where she likes to spin and swirl! Oh she says sure and cool and yeah, she's my monosyllabic girl.`, 
+`Things. Get. Hectic quick From the satellite dish to your joy stick It's the night of the living cable box Wires coming up from around the block Remote control to change the station But that won't change your situation. Have you seen, What I mean? I'm a little gnome that's in your dreams So I say this rhyme built by design To take you beyond space and time Saying who is the man making diamonds out of coal The man pushing buttons on remote control.`,
 `Jesus Christ girl; What are people going to think? When I show up to one of several funerals I've attended for Grandpa this week. With you. With me. But someone's gotta help me dig. Someone's gotta help me dig.`, 
-`Some will die in hot pursuit, and fiery auto crashes. Some will die in hot pursuit, while sifting through my ashes. Some will fall in love with life and drink it from a fountain that is pouring like an avalance, coming down the mountain. I don't mind the sun sometimes, the images it shows. I can taste you on my lips and smell you in my clothes. Cinnamon and sugary, and softly spoken lies. You never know just how you look through other people's eyes.`, 
-`Jealous. Cowards. Try to control! They distort. What we say! Try to stop. What we do! When they can't. Do it themselves! We. Are tired. Of your. Abuse. Try to stop us. It's. No Use! Think they're smart; can't think for themselves. Laugh at us. Behind our backs. We find satisfaction in what they lack. Rise above we're gonna rise above!`,
+`Some will die in hot pursuit and fiery auto crashes Some will die in hot pursuit while sifting through my ashes Some will fall in love with life and drink it from a fountain that is pouring like an avalanche, coming down the mountain. I don't mind the sun sometimes, the images it shows. I can taste you on my lips and smell you in my clothes. Cinnamon and sugary and softly spoken lies. You never know just how you look through other people's eyes.`, 
+`Jealous Cowards Try to control! Rise above we're gonna rise above! They distort What we say! Rise above we're gonna rise above! Try to stop What we do When they can't Do it themselves! Rise above we're gonna rise above! We Are tired. Of your Abuse. Try to stop us but It's No Use! Think they're smart can't think for themselves Laugh at us Behind our backs We find satisfaction in what they lack Rise above we're gonna rise above!`,
 `Left a good job in the city; working for the man every night and day; and I never lost a minute of sleeping worrying about the way things might have been. Big wheel keep on turnin', Proud Mary keep on burnin'. Rolling, rolling, rolling down a river.`, 
-`When mom and dad went to a show, they dropped me off at Grandpa Joes. I kicked and screamed said please don't go! Had to eat my dinner there. Mashed potatoes and stuff like that. I couldn't chew my meat to good. Grandma said why don't you stop your cryin', go outside and ride your bike. That's what I did, i hurt my toe! Well after dinner I had ice cream. I fell asleep and watched tv. I woke up in my mothers arms! Grandma take me home, grandma take me home, grandma take me home; I want to be alone.`, 
+`When mom and dad went to a show, they dropped me off at Grandpa Joes, I kicked and screamed said please don't go! Had to eat my dinner there, Mashed potatoes and stuff like that, I couldn't chew my meat too good. Grandma take me home Grandma take me home. She said why don't you stop your cryin', go outside and ride your bike That's what I did i hurt my toe! After dinner I had ice cream, I fell asleep and watched tv, I woke up in my mothers arms! Grandma take me home, I want to be alone.`, 
+`Take a look around the room, love comes wearing disguises. How to go about and choose? Break it down by shapes and sizes, I'm a man who's got very specific tastes. When there's loving in the air, don't fight it just keep breathing. I can't help myself but stare, double check for double meanings. I'm a man who's got very specific tastes.`, 
+`When I ran I didn't feel like a runaway, when I escaped I didn't feel like I got away, There's more to living than only surviving, maybe I'm not there, but I'm still trying. If I seem bleak, well then you'd be correct and if I don't speak it's because I get disconnected, but I won't be, burned by the reflection of the fire in your eyes as you're staring at the sun.`,
+`Where they lead, you will follow. Well I guess that's just the way it goes. And if you look away you'll be doing what they say, and If you look alive, you'll be singled out and tried. If you take home anything, let it be your will to think. The more cynical you become the better off you'll be!`, 
+`Some might say that sunshine follows thunder. Go and tell it to the man who cannot shine. Some might say, that we should never ponder, on our thoughts today cause they hold sway over time. Some might say, we will find a brighter day.`
 
 ]
 
@@ -425,6 +431,21 @@ function botVoice(message){
      if(message.includes(`stupid`)){
         speech.text = retorts[Math.floor(Math.random() * retorts.length)]
     }
+    if(message.includes(`hate`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
+    if(message.includes(`not true`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
+    if(message.includes(`I don't believe`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
+    if(message.includes(`wrong`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
+    if(message.includes(`dumb`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
     if(message.includes(`privilege`)){
         speech.text = retorts[Math.floor(Math.random() * retorts.length)]
     }
@@ -434,7 +455,7 @@ function botVoice(message){
      if(message.includes(`facts`)){
         speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
     }
-     if(message.includes(`facts`)){
+     if(message.includes(`fact`)){
         speech.text = amazingFacts[Math.floor(Math.random() * amazingFacts.length)]
     }
      if(message.includes(`joke`)){
