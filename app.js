@@ -328,6 +328,9 @@ voice.addEventListener('click', () => {
 philosophybtn.addEventListener('click', () => {
     buttonVoice(philosophyQuotes); 
 })
+jokebtn.addEventListener('click', () => {
+    buttonVoice(joke); 
+})
 
 
 recognition.onresult = (event) => {
