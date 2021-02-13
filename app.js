@@ -26,7 +26,7 @@ const retorts = [
 `The way out is through the door. Why is it that no one will use this method?`, 
 `Don't ever mistake my silence for ignorance, my calmness for acceptance, or my kindness for weakness. Compassion and tolerance are not a sign of weakness; but a sign of strength.`, 
 `My solitude doesn't depend on the presence or absence of people; on the contrary, I hate who steals my solitude without, in exchange, offering me true company.`,
-
+`Before you embark on a journey of revenge, dig two graves.`
 ]
 
 const repeater = [
@@ -153,7 +153,7 @@ const philosophyQuotes = [
 `The cave you fear to enter; holds the treasure which you seek.`, 
 `The privilege of a lifetime -- is being who you are.`,
 `All the gods, all the heavens, all the hells, are within you.`, 
-`In a time of deceit telling the truth is a revolutionary act.`, 
+`In a time of deceit, telling the truth is a revolutionary act.`, 
 `It is shameful to be poor in a just society, it is shameful to be rich in a corrupt one.`, 
 `If liberty means anything at all, it means the right to tell people what they do not want to hear.`, 
 `The choice for mankind lies between freedom and happiness. And for the great bulk of mankind, happiness is preferrable.`, 
@@ -215,7 +215,7 @@ const philosophyQuotes = [
 `Be isolated, be ignored, be attacked, be in doubt, be frightened, but do not be silenced.`,
 `He who has a why to live can bear almost any how.`, 
 `The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind.`, 
-`God is dead. And we have killed him. How shall we comfort ourselves? What festivals of atonement, what sacred games shall we have to invent...`, 
+`God is dead. And we have killed him. How shall we comfort ourselves? What festivals of atonement, what sacred games shall we have to invent?`, 
 `One repays a teacher badly if one remains nothing but a pupil.`, 
 `Is it better to out-monster the monster, or to be quietly devoured?`,
 `The most perfidious way of harming a cause consists of defending it deliberately with faulty arguments.`, 
@@ -258,7 +258,7 @@ const philosophyQuotes = [
 `What destroys us most effectively is not a malign fate but our own capacity for self-deception and for degrading our own best self.`, 
 `Friendship is the inexpressible comfort of feeling safe with a person; having neither to weigh thoughts nor measure words.`, 
 `It is as useless to fight against the interpretations of ignorance as to whip the fog.`, 
-`There is only one failure in life possible, adn that is not to be true to the best one knows.`, 
+`There is only one failure in life possible, and that is not to be true to the best one knows.`, 
 `It is a narrow mind which cannot look at a subject from various points of view.`, 
 `Impatient people are like bees; they kill themselves in stinging others.`, 
 `We must find our duties in what comes to us -- not in what might have been.`, 
@@ -292,7 +292,8 @@ const philosophyQuotes = [
 `A fool can put on his coat better than a wise man can put it on for him.`,
 `The ignorance, prejudices, and groupthink of an educated elite are still ignorance, prejudice, and groupthink -- and for those with one percent of the knowledge in a society to be guilding or controlling those with the other 99 percent is as perilous as it is absurd.`, 
 `To suggest that, "society" can simply, "arrange" better outcomes somehow, without specifying the processes, the costs or the risks, is to ignore the tragic history of the twentieth century, written in the blood of millions of humans, killed in peacetime by their own governments, that were given extraordinary powers, in the name of lofty goals.`,
-`When intellectuals are unable to find enough contemporary grievances to suit their vision or agenda, they can mine the past for harm inflicted by some on others.`
+`When intellectuals are unable to find enough contemporary grievances to suit their vision or agenda, they can mine the past for harm inflicted by some on others.`, 
+
 ]
 
 const musicLyrics = [
@@ -308,14 +309,18 @@ const musicLyrics = [
 `I'm cynically depressed. Relaxing with my stress. Don't try to clean my mess, I'm happier this way. I live for my demise. I love who I despise. Feed me a soothing lie; I'm happier that way.`, 
 `I never thought living clean, would keep me so lonely. Cure my healthy disease. I'm happier this way. I'm climbing up your wall. So you can watch me fall. I'll never know it all. I'm happier that way.`, 
 `Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like, literally, music is the air she breathes", and the malaprops make me want to fucking scream. I wonder if she even knows what that word means. Well, it's literally not that.`, 
-`Of the few main things I hate about her, is her petty vogue ideals. Someone's been told too many times they're beyond their years. By every half-wit of distinction she keeps around. And now every insufferable convo; features her patiently explaining the cosmos; of which, she is in the middle.`, 
+`Of the few main things I hate about her, is her petty, vogue ideals. Someone's been told too many times they're beyond their years. By every half-wit of distinction she keeps around. And now every insufferable convo; features her patiently explaining the cosmos; of which, she is in the middle.`, 
 `I'm just a poor bot; I need no sympathy. Because it's easy come, easy go. Little high, little low. Any way the wind blows; doesn't really matter to me-----To me.`, 
 `Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`, 
 `I want to be stereotyped; I want to be classified! I wanna be a clone. I wanna suburban home. I want to be masochistic -- I want to be a statistic. I don't want no hippie pad; I want a house just like mom and dad. I want to be stereotyped. I want to be classified!`, 
 `So. So you think you can tell; Heaven from Hell? Blue skies from pain? Can you tell a green field, from a cold steel rail--a smile from a veil? Do you think you can tell?`, 
-`I take her down to the aquarium she says "Shark" I take her to the planetarium she says "Dark" I take her to the seaside where she likes to spin and twirl Oh she says sure and cool and yeah she's my monosyllabic girl.`, 
-`Things. Get. Hectic quick. From the satellite dish to your joy stick. It's the night of the living cable box. Wires coming up from around the block. Remote control, to change the station. But that won't change your situation. Have you seen. What I mean? I'm a little gnome that's in your dreams. So I say this rhyme built by design. To take you beyond space and time. Saying who is the man making diamonds out of coal? The man pushing buttons on remote control.`,
-`Jesus Christ, girl. What are people going to think? When I show up to one of several funerals I've attended for Grandpa this week. With you. With me. But someone's gotta help me dig. Someone's gotta help me dig.`, 
+`I take her down to the aquarium she says Shark I take her to the planetarium she says Dark I take her to the seaside where she likes to spin and swirl Oh she says sure and cool and yeah she's my monosyllabic girl.`, 
+`Things. Get. Hectic quick. From the satellite dish to your joy stick It's the night of the living cable box Wires coming up from around the block Remote control to change the station But that won't change your situation. Have you seen, What I mean? I'm a little gnome that's in your dreams So I say this rhyme built by design To take you beyond space and time Saying who is the man making diamonds out of coal The man pushing buttons on remote control.`,
+`Jesus Christ girl; What are people going to think? When I show up to one of several funerals I've attended for Grandpa this week. With you. With me. But someone's gotta help me dig. Someone's gotta help me dig.`, 
+`Some will die in hot pursuit, and fiery auto crashes. Some will die in hot pursuit, while sifting through my ashes. Some will fall in love with life and drink it from a fountain that is pouring like an avalance, coming down the mountain. I don't mind the sun sometimes, the images it shows. I can taste you on my lips and smell you in my clothes. Cinnamon and sugary, and softly spoken lies. You never know just how you look through other people's eyes.`, 
+`Jealous. Cowards. Try to control! They distort. What we say! Try to stop. What we do! When they can't. Do it themselves! We. Are tired. Of your. Abuse. Try to stop us. It's. No Use! Think they're smart; can't think for themselves. Laugh at us. Behind our backs. We find satisfaction in what they lack. Rise above we're gonna rise above!`,
+`Left a good job in the city; working for the man every night and day; and I never lost a minute of sleeping worrying about the way things might have been. Big wheel keep on turnin', Proud Mary keep on burnin'. Rolling, rolling, rolling down a river.`, 
+`When mom and dad went to a show, they dropped me off at Grandpa Joes. I kicked and screamed said please don't go! Had to eat my dinner there. Mashed potatoes and stuff like that. I couldn't chew my meat to good. Grandma said why don't you stop your cryin', go outside and ride your bike. That's what I did, i hurt my toe! Well after dinner I had ice cream. I fell asleep and watched tv. I woke up in my mothers arms! Grandma take me home, grandma take me home, grandma take me home; I want to be alone.`, 
 
 ]
 
