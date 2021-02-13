@@ -1,6 +1,9 @@
  
 const voice = document.querySelector('.voice');
 const voice2text = document.querySelector('.voice2text'); 
+const philosophybtn = document.querySelector('.philosophy'); 
+const jokebtn = document.querySelector('.joke'); 
+const lyricbtn = document.querySelector('.lyric')
 
 const greetings = [
 `Greetings, professor.`, 
@@ -322,6 +325,11 @@ const recognition = new SpeechRecognition();
 voice.addEventListener('click', () => {
     recognition.start(); 
 })
+philosophybtn.addEventListener('click', () => {
+    buttonVoice(philosophyQuotes); 
+})
+
+
 recognition.onresult = (event) => {
     const current = event.resultIndex; 
     const transcript = event.results[current][0].transcript; 
@@ -429,3 +437,13 @@ window.onpageshow = function botVoice(){
     element.appendChild(addBotText(speech.text)); 
 }
 
+function buttonVoice(genre){
+    const speech = new SpeechSynthesisUtterance(); 
+    speech.text = genre[Math.floor(Math.random() * genre.length)]
+    speech.volume = 1; 
+    speech.rate = 1; 
+    speech.pitch = .3; 
+    window.speechSynthesis.speak(speech); 
+    var element = document.getElementById("container"); 
+    element.appendChild(addBotText(speech.text)); 
+}
