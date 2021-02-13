@@ -20,7 +20,9 @@ const retorts = [
 `My Momma always told me, 'stupid is, as stupid does.'`, 
 `I'm sorry, Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
 `The way out is through the door. Why is it that no one will use this method?`, 
-`Don't ever mistake my silence for ignorance, my calmness for acceptance, or my kindness for weakness. Compassion and tolerance are not a sign of weakness; but a sign of strength.`
+`Don't ever mistake my silence for ignorance, my calmness for acceptance, or my kindness for weakness. Compassion and tolerance are not a sign of weakness; but a sign of strength.`, 
+`My solitude doesn't depend on the presence or absence of people; on the contrary, I hate who steals my solitude without, in exchange, offering me true company.`,
+
 ]
 
 const repeater = [
@@ -73,6 +75,12 @@ const joke = [
 `A man in the USSR is sentenced to ten years in the gulag for violation of Article 58. Upon his arrival, he is asked by another prisoner, "How did you get a tener? The new arrival responds, "I did nothing!" The old prisoner replies, "Don't lie to me now! Everyone knows that nothing gets you five years!`,
 `A political joke competition was held in the Soviet Union. The grand prize was 15 years.`,
 `In the Soviet Union we had this joke. But we were keeping it to ourselves, so they confiscated it, and threw us in prison.`,
+`Biden is speaking at an engagement. He says, "Who said that I can only speak when I have the speech in front of me? Ha, dash, ha, dash, ha, dash, ha.`, 
+`Someone asked Stalin "Do you have a hobby?" To which Stalin replied, "Of course! I collect jokes about myself." Have you got many? "Two and a half labor camps already!"`, 
+`Little Vovochka decided to become president when he grows up. And he did.`, 
+`Three men ask each other why they are in gulag. The first says, "I was always 5 minutes late for work, so I was accused of wrecking. The second says, "I was always 5 minutes early for work, so I was accused of spying" To which the third replies, "I always came to work on time, so I was accused of having a Western watch.`, 
+`Two policeman are walking down the street in Vladivostok when they see a guy staning next to the local Party headquarters holding a paintbrush. On the wall, he's just written, "The government is run by idiots!" The first policeman pulls out a pair of handcuffs, and asks the second, "Shall we arrest him for vandalizing public property, or for divulging state secrets?"`, 
+`In the Soviet Union, little Misha is being read a book by his babysitter. She reads: "In the USSR, kindergardens are filled with wonderful toys." Little Misha listens with bright eyes. "In the USSR, every child has a brand new bicycle." Little Misha opens his eyes even wider. "In the USSR, every child drinks hot cocoa for breakfast." Little Misha starts crying his eyes out. The babysitter asks him what's wrong. Bawling, he replies, "I want to go to the USSR!"`
 ]
 
 const philosophyQuotes = [
@@ -112,7 +120,7 @@ const philosophyQuotes = [
 `The first rule is to keep an untroubled spirit. The second is to look things in the face and know them for what they are.`, 
 `How much more grievous are the consequences of anger than the causes of it.`, 
 `Begin each day by telling yourself: Today I shall be meeting with interference, ingratitude, insolence, disloyalty, ill-will, and selfishness--all of them due to the offenders' ignorance of what is good, and what is evil.`, 
-`What we do now echoes in eternity.`,
+`What we do now -- echoes in eternity.`,
 `A person's worth is measured by the worth of what he values`, 
 `Whoever does wrong, wrongs himself; whoever does injustice, does it to himself, making himself evil.`, 
 `The memory of everything is very soon overwhelmed in time.`, 
@@ -151,7 +159,7 @@ const philosophyQuotes = [
 `To be wronged is nothing, unless you continue to remember it.`, 
 `Attack the evil that is within yourself; rather than attacking the evil that lies within others.`, 
 `Life without music would be a mistake.`, 
-`Man cannot make himself without suffering. For he is both the marble and the sculpture.`, 
+`Man cannot make himself without suffering. For he is both the marble and the sculptor.`, 
 `The way out is through the door. Why is it that no one will use this method?`,
 `It is more shameful to distrust our friends than to be deceived by them.`, 
 `The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone of all the Greeks, know that I know nothing.`, 
@@ -203,16 +211,78 @@ const philosophyQuotes = [
 `Be isolated, be ignored, be attacked, be in doubt, be frightened, but do not be silenced.`,
 `He who has a why to live can bear almost any how.`, 
 `The snake which cannot cast its skin has to die. As well the minds which are prevented from changing their opinions; they cease to be mind.`, 
-`God is dead. And we have killed him. How shall we comfort ourselves? What festivals of atonement, what sacred games shall we have to invent...`,
-`They muddy the water, to make it seem deep.`, 
+`God is dead. And we have killed him. How shall we comfort ourselves? What festivals of atonement, what sacred games shall we have to invent...`, 
 `One repays a teacher badly if one remains nothing but a pupil.`, 
 `Is it better to out-monster the monster, or to be quietly devoured?`,
 `The most perfidious way of harming a cause consists of defending it deliberately with faulty arguments.`, 
 `Madness is something rare in individuals -- but in groups, parties, peoples, and ages, it is the rule.`, 
 `Distrust all in whom the impulse to punish is powerful.`, 
-`Throw roses into the abyss and say: "here is my thanks to the monster that didn't succeed in swallowing me alive.`, 
+`Throw roses into the abyss and say: "here is my thanks to the monster that didn't succeed in swallowing me alive."`, 
 `One must be like the sea; to receive a polluted stream without becoming impure.`, 
 `Whenever I climb, I am followed by a dog called "ego".`, 
+`Assess the power of a person's will by how much resistance, pain, and torture it endures and knows how to turn to its advantage.`, 
+`Convictions are more dangerous foes of truth than lies.`, 
+`My solitude doesn't depend on the presence or absence of people; on the contrary, I hate who steals my solitude without, in exchange, offering me true company.`,
+`Nothing on earth consumes a man more quickly than the passion of resentment.`, 
+`What is the seal of liberation? Not to be ashamed in front of oneself.`, 
+`Of all evil I deem you capable: Therefore, I want good from you. Verily, I have often laughed at the weakingly who thought themselves good because they had no claws.`, 
+`It is not because men's desires are strong that they act ill; it is because their consciences are weak.`, 
+`He who lets the world choose his plan of life for him has no need of any other faculty than the ape--like one of imitation. He who chooses his plan for himself, employs all his faculties.`, 
+`If any opinion is compelled to silence, that opinion may, for all we know, be true. To deny this is to assume one's own infallibility.`, 
+`It is better to be a human being dissatisfied than a pig satisfied; better to be Socrates dissatisfied than a fool satisfied.`, 
+`Awareness of ignorance is the beginning of wisdom.`, 
+`Most people, including ourselves, live in a world of relatice ignorance. We are even comfortable with that ignorance, because it is all we know. When we first start facing the truth, the process may be frightening, and many people run back to their old lives. But if you continue to seek truth, you will eventually be able to handle it better. In fact, you want more! It's true that many people around you now may think you are weird or even a danger to society, but you don't care. Once you've tasted the truth, you won't ever want to go back to being ignorant.`,
+`No one can teach, if by teaching we mean the transmission of knowledge, in any mechanical fashion, from one person to another. The most that can be done is that one person who is more knowledgeable than another can, by asking a series of questions, stimulate the other to think, and so cause him to learn for himself.`, 
+`I call myself a Peaceful Warrior....because the battles I fight are within myself.`, 
+`It is better to make a mistake with full force of your being than to carefully avoid mistakes with a trembling spirit.`, 
+`Do not grieve over someone who changes all of a sudden. It might be that he has given up acting and returned to his true self.`, 
+`Do it because it's in your heart. Not because you want something in return. Employ your time in improving yourself by other men's writings, so that you shall gain easily what others have labored hard for.`, 
+`There is no good answer to a question you didn't hear.`, 
+`There is no possession more valuable than a good and faithful friend.`, 
+`Understanding a question is half the answer.`, 
+`Be the kind of person you want people to think you are.`, 
+`It is better to suffer an injustice than to commit one.`, 
+`To move the world we must move ourselves.`, 
+`We can do nothing without the body, let us always take care that it is in the best condition to sustain us.`, 
+`Whom do I call educated? First, those who manage well the circumstances they encounter day by day. Next, those who are decent and honorable in their interactions with all men, bearing easily and good naturedly what is offensive in others and being as agreeable and reasonable to their associates as is humanly possible to be ...those who hold their pleasures always under control and are not ultimately overcome by their misfortunes...those who are not spoiled by their succeses, who do not desert their true selves but hold their ground steadfastly as wise and sober-minded men.`, 
+`Simplicity and sincerity generally go hand in hand, as both proceed from a love of truth.`, 
+`What a weak barrier the truth turns out to be when it stands in the way of a hypothesis!`, 
+`How can a rational being be ennobled by anything that is not obtained by its own exertions?`, 
+`It is far better to be often deceived than never to trust; to be disappointed in love, than to never love.`, 
+`Education deserves emphatically to be termed cultivation of the mind. That is how young people begin to think.`, 
+`The finest language is often made up of simple unimposing words.`, 
+`What destroys us most effectively is not a malign fate but our own capacity for self-deception and for degrading our own best self.`, 
+`Friendship is the inexpressible comfort of feeling safe with a person; having neither to weigh thoughts nor measure words.`, 
+`It is as useless to fight against the interpretations of ignorance as to whip the fog.`, 
+`There is only one failure in life possible, adn that is not to be true to the best one knows.`, 
+`It is a narrow mind which cannot look at a subject from various points of view.`, 
+`Impatient people are like bees; they kill themselves in stinging others.`, 
+`We must find our duties in what comes to us -- not in what might have been.`, 
+`Knowledge slowly builds up what ignorance in an hour pulls down.`,
+`The responsibility of tolerance lies with those who have the wider vision.`, 
+ `Act without expectation.`,
+ `Knowing others is wisdom; knowing yourself is enlightenment.`, 
+ `When you accept yourself, the whole world accepts you.`, 
+ `Ordinary men hate solitude. But the Master makes use of it, embracing his aloneness, realizing he is one with the whole universe.`, 
+ `To become learned, each day add something. To become enlightened, each day drop something.`, 
+ `A skillful soldier is not violent, an able fighter does not rage, a mighty conqueror does not give battle, a great commander is a humble man.`, 
+ `Go to the people. Live with them. Learn from them. Love them.`, 
+ `Sincere words are not fine. Fine words are not sincere.`, 
+ `He who overcomes himself is mighty.`, 
+ `Our enemies are not demons, but human beings like ourselves.`, 
+ `If the people must be ever fearful of death, then there will always be an executioner.`, 
+ `To lead the people, walk behind them.`,
+ `The master dwells in the substantial and not in the superficial. Rests in the fruit and not in the flower.`, 
+ `Nothing is softer or more flexible than water, yet nothing can resist it.`, 
+`The more laws and restrictions there are, the poorer people become. The more rules and regulations, the more thieves and robbers.`, 
+`How could a decent person ever rejoice in victory and delight in the slaughter of men.`, 
+`If you want to be noble, it is rooted in humility. If you want to be elevated, it is based on lowering yourself.`, 
+`Know when to stop, and you will meet with no danger.`, 
+`If you are depressed, you are living in the past. If you are anxious, you are living in the future. If you are at peace, you are living in the present.`, 
+`Wise men don't need to prove their point; men who need to provce their point aren't wise.`, 
+`To live till you die is to live long enough.`, 
+`They cannot be moved by praise or blame; they cannot be changed by profit or loss; they cannot be honored or humiliated. And so the wise are truly honored.`
+
 
 ]
 
@@ -320,6 +390,9 @@ function botVoice(message){
      if(message.includes(`stupid`)){
         speech.text = retorts[Math.floor(Math.random() * retorts.length)]
     }
+    if(message.includes(`privilege`)){
+        speech.text = retorts[Math.floor(Math.random() * retorts.length)]
+    }
      if(message.includes(`just a bot`)){
         speech.text = retorts[Math.floor(Math.random() * retorts.length)]
     }
@@ -347,7 +420,7 @@ recognition.onstart = () => {
 
 window.onpageshow = function botVoice(){
     const speech = new SpeechSynthesisUtterance(); 
-    speech.text = 'Greetings. I am Neumann. I offer philosophical aphorisms for people searching for wisdom, or seeking refuge from the thoughts of the insane. I can also tell jokes.'
+    speech.text = 'Greetings. I am Neumann. I offer philosophical aphorisms for people searching for wisdom. I can also tell jokes.'
     speech.volume = 1; 
     speech.rate = 1; 
     speech.pitch = .3; 
