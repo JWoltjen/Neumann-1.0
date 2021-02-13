@@ -3,7 +3,7 @@ const voice = document.querySelector('.voice');
 const voice2text = document.querySelector('.voice2text'); 
 const philosophybtn = document.querySelector('.philosophy'); 
 const jokebtn = document.querySelector('.joke'); 
-const lyricbtn = document.querySelector('.lyric')
+const lyricbtn = document.querySelector('.lyrics')
 
 const greetings = [
 `Greetings, professor.`, 
@@ -330,6 +330,9 @@ philosophybtn.addEventListener('click', () => {
 })
 jokebtn.addEventListener('click', () => {
     buttonVoice(joke); 
+})
+lyricbtn.addEventListener('click', () => {
+    buttonVoice(musicLyrics); 
 })
 
 
