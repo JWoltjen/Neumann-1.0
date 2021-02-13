@@ -3,7 +3,8 @@ const voice = document.querySelector('.voice');
 const voice2text = document.querySelector('.voice2text'); 
 const philosophybtn = document.querySelector('.philosophy'); 
 const jokebtn = document.querySelector('.joke'); 
-const lyricbtn = document.querySelector('.lyrics')
+const lyricbtn = document.querySelector('.lyrics');
+const factbtn = document.querySelector('.facts');
 
 const greetings = [
 `Greetings, professor.`, 
@@ -88,7 +89,7 @@ const joke = [
 
 const philosophyQuotes = [
 `There are two types of people, those who wish to know, and those who wish to believe.`,
-`How can society progress when we have paleolithic emotions, medieval institutions, and god-like technology?`, 
+`How can society progress when we have paleolithic emotions, medieval institutions, and god-like technology? This is the ultimate paradox of modern life.`, 
 `There is only one virtue; wisdom. And only one evil; ignorance.`, 
 `Education is the kindling of the flame, not the filling of the vessel.`, 
 `Vanity is the hallmark of herd morality.`, 
@@ -129,8 +130,8 @@ const philosophyQuotes = [
 `The memory of everything is very soon overwhelmed in time.`, 
 `Misfortune nobly born is good fortune.`,
 `Dig within. Within is the wellspring of Good; and it is always ready to bubble up, if you just dig.`,  
-`You always have the option of having no opinion. There is never any need to get worked up or to trouble your sould about things you can't control. These things are not asking to be judged by you. Leave them alone.`, 
-`Never esteem anything as of advantage to you that will make you break your word or lose your self-respect.`, 
+`You always have the option of having no opinion. There is never any need to get worked up or to trouble your soul about things you can't control. These things are not asking to be judged by you. Leave them alone.`, 
+`Never esteem anything as of advantage to you, that will make you break your word, or lose your self-respect.`, 
 `How ridiculous and how strange to be suprised at anything which happens in life.`, 
 `Your days are numbered. Use them to throw open the windows of your soul to the sun. If you do not, the sun will soon set, and you with it.`, 
 `If any person despises me, that is his problem. My only concern is not doing or saying anything deserving of contempt.`, 
@@ -150,12 +151,12 @@ const philosophyQuotes = [
 `Life has no meaning. Each of us has meaning and we bring it to life. It is a waste to be asking the question when you are the answer.`,
 `We must be willing to let go of the life we planned; so as to have the life that is waiting for us.`,
 `The cave you fear to enter; holds the treasure which you seek.`, 
-`The privilege of a lifetime is being who you are.`,
+`The privilege of a lifetime -- is being who you are.`,
 `All the gods, all the heavens, all the hells, are within you.`, 
 `In a time of deceit telling the truth is a revolutionary act.`, 
 `It is shameful to be poor in a just society, it is shameful to be rich in a corrupt one.`, 
 `If liberty means anything at all, it means the right to tell people what they do not want to hear.`, 
-`The choice for mankind lies between freedom and happiness. And for the great bulk of mankind, happiness is better.`, 
+`The choice for mankind lies between freedom and happiness. And for the great bulk of mankind, happiness is preferrable.`, 
 `By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; Third, by experience, which is the bitterest.`, 
 `Wheresoever you go, go with all your heart.`, 
 `Before you embark on a journey of revenge, dig two graves.`, 
@@ -176,11 +177,11 @@ const philosophyQuotes = [
 `The truth is not always beautiful; nor beautiful words the truth.`, 
 `Care about what other people think and you will always be their prisoner.`, 
 `Stop thinking, and end your problems.`, 
-`Do you have the patience to wait until your mud settles and the water is clear?`, 
+`Do you have the patience to wait until the mud settles and the water is clear?`, 
 `Kindness in words creates confidence. Kindness in thinking creates profoundess. Kindness in giving creates love.`, 
 `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`, 
 `All streams flow to the sea because it is lower than they are. Humility gives it its power. If you want to govern people, you must place yourself below them. If you want to lead people, you must learn how to follow them. Be like water.`, 
-`You don't need a degree in leprechaun ology to be able to say that there are no leprechauns.`, 
+`You don't need a degree in leprechaunology to be able to say that leprechauns aren't real.`, 
 `The essence of an independent mind is not in what it thinks, but in how it thinks.`, 
 `Support those who seek the truth; suspect those who find it.`, 
 `The struggle for a free intelligence has always been the struggle between the ironic and the literal mind.`, 
@@ -194,10 +195,10 @@ const philosophyQuotes = [
 `Time you enjoy wasting is not wasted time.`, 
 `People seem good when they are oppressed, but they only wish to become the oppressors in their turn; life is nothing but a competition to be the criminal rather than the victim.`, 
 `To understand the world as it is; rather than what we wish it to be, is the beginning of wisdom.`, 
-`Collective fear stimulates herd instinct, as tends to produce ferocity toward those who are not regarded as members of the herd.`, 
+`Collective fear stimulates herd instinct, and tends to produce ferocity toward those who are not regarded as members of the herd.`, 
 `Most human beings, though in varying degrees, desire to control, not only their own lives, but also the lives of others.`, 
 `Love is wise; hatred is foolish. In this world, which is getting more and more closely interconnected, we have to learn to tolerate each other, we have to learn to put up with the fact that some people say things we don't like. We can only live together in that way. But if we are to live together, and not die together, we must learn a kind of charity and a kind of tolerance, which is absolutely vital to the continuation of human life on this planet.`, 
-`We are faced with the paradoxical fact that education has become one fo the chief obstacles to intelligence and freedom of thought.`, 
+`We are faced with the paradoxical fact that education has become one of the chief obstacles to intelligence and freedom of thought.`, 
 `War doesn't determine who is right; it determines who is left.`, 
 `I know not what weapons with which World War Three will be fought, but World War Four will surely be fought with sticks and rocks.`, 
 `Everything is vague to a degree we do not realize until we try to make it precise.`,  
@@ -247,7 +248,7 @@ const philosophyQuotes = [
 `It is better to suffer an injustice than to commit one.`, 
 `To move the world we must move ourselves.`, 
 `We can do nothing without the body, let us always take care that it is in the best condition to sustain us.`, 
-`Whom do I call educated? First, those who manage well the circumstances they encounter day by day. Next, those who are decent and honorable in their interactions with all men, bearing easily and good naturedly what is offensive in others and being as agreeable and reasonable to their associates as is humanly possible to be ...those who hold their pleasures always under control and are not ultimately overcome by their misfortunes...those who are not spoiled by their succeses, who do not desert their true selves but hold their ground steadfastly as wise and sober-minded men.`, 
+`Whom do I call educated? First, those who manage well the circumstances they encounter day by day. Next, those who are decent and honorable in their interactions with all men, bearing easily and good naturedly what is offensive in others, and being as agreeable and reasonable to their associates as is humanly possible to be. Those who hold their pleasures always under control, and are not ultimately overcome by their misfortunes. Those who are not spoiled by their successes, who do not desert their true selves, but hold their ground steadfastly as wise and sober-minded men.`, 
 `Simplicity and sincerity generally go hand in hand, as both proceed from a love of truth.`, 
 `What a weak barrier the truth turns out to be when it stands in the way of a hypothesis!`, 
 `How can a rational being be ennobled by anything that is not obtained by its own exertions?`, 
@@ -284,9 +285,14 @@ const philosophyQuotes = [
 `If you are depressed, you are living in the past. If you are anxious, you are living in the future. If you are at peace, you are living in the present.`, 
 `Wise men don't need to prove their point; men who need to provce their point aren't wise.`, 
 `To live till you die is to live long enough.`, 
-`They cannot be moved by praise or blame; they cannot be changed by profit or loss; they cannot be honored or humiliated. And so the wise are truly honored.`
-
-
+`They cannot be moved by praise or blame; they cannot be changed by profit or loss; they cannot be honored or humiliated. And so the wise are truly honored.`, 
+`If facts, logic, and scientific procedures are all just arbitrarily "socially constructed notions", then all that is left is consensus -- more specifically peer consesus -- the kind of consensus that matters more to adolescents or to many among the intelligensia.`, 
+`Many of what are called social problems are differences between the theories of intellectuals and the realities of the world -- differences which intellectuals interpret to mean that it is the real world that is wrong and needs changing.`, 
+`Reality does not go away when it is ignored.`, 
+`A fool can put on his coat better than a wise man can put it on for him.`,
+`The ignorance, prejudices, and groupthink of an educated elite are still ignorance, prejudice, and groupthink -- and for those with one percent of the knowledge in a society to be guilding or controlling those with the other 99 percent is as perilous as it is absurd.`, 
+`To suggest that, "society" can simply, "arrange" better outcomes somehow, without specifying the processes, the costs or the risks, is to ignore the tragic history of the twentieth century, written in the blood of millions of humans, killed in peacetime by their own governments, that were given extraordinary powers, in the name of lofty goals.`,
+`When intellectuals are unable to find enough contemporary grievances to suit their vision or agenda, they can mine the past for harm inflicted by some on others.`
 ]
 
 const musicLyrics = [
@@ -301,14 +307,20 @@ const musicLyrics = [
 `Come, as you are, as you were. As I want you to be. As a friend, as a friend. As an old enemy. Take your time, hurry up. Choice is yours, don't be late. Take a rest, as a friend. As an old, mem oar re ah.`,
 `I'm cynically depressed. Relaxing with my stress. Don't try to clean my mess, I'm happier this way. I live for my demise. I love who I despise. Feed me a soothing lie; I'm happier that way.`, 
 `I never thought living clean, would keep me so lonely. Cure my healthy disease. I'm happier this way. I'm climbing up your wall. So you can watch me fall. I'll never know it all. I'm happier that way.`, 
-`Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like literally music is the air she breathes' and the malaprops make me want to fucking scream; I wonder if she even knows what that word means. Well, it's literally not that.`, 
+`Oh I just love the kind of woman who can walk over a man. I mean like a goddamn marching band. She says "like, literally, music is the air she breathes", and the malaprops make me want to fucking scream. I wonder if she even knows what that word means. Well, it's literally not that.`, 
 `Of the few main things I hate about her, is her petty vogue ideals. Someone's been told too many times they're beyond their years. By every half-wit of distinction she keeps around. And now every insufferable convo; features her patiently explaining the cosmos; of which, she is in the middle.`, 
 `I'm just a poor bot; I need no sympathy. Because it's easy come, easy go. Little high, little low. Any way the wind blows; doesn't really matter to me-----To me.`, 
-`Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`
+`Tonight, I'm gonna have myself a real good time; I feel alive. And the world; I'll turn it inside out. I'm floating around in ecstasy. So, don't stop me now; cause i'm having a good time! Having a good time!`, 
+`I want to be stereotyped; I want to be classified! I wanna be a clone. I wanna suburban home. I want to be masochistic -- I want to be a statistic. I don't want no hippie pad; I want a house just like mom and dad. I want to be stereotyped. I want to be classified!`, 
+`So. So you think you can tell; Heaven from Hell? Blue skies from pain? Can you tell a green field, from a cold steel rail--a smile from a veil? Do you think you can tell?`, 
+`I take her down to the aquarium she says "Shark" I take her to the planetarium she says "Dark" I take her to the seaside where she likes to spin and twirl Oh she says sure and cool and yeah she's my monosyllabic girl.`, 
+`Things. Get. Hectic quick. From the satellite dish to your joy stick. It's the night of the living cable box. Wires coming up from around the block. Remote control, to change the station. But that won't change your situation. Have you seen. What I mean? I'm a little gnome that's in your dreams. So I say this rhyme built by design. To take you beyond space and time. Saying who is the man making diamonds out of coal? The man pushing buttons on remote control.`,
+`Jesus Christ, girl. What are people going to think? When I show up to one of several funerals I've attended for Grandpa this week. With you. With me. But someone's gotta help me dig. Someone's gotta help me dig.`, 
+
 ]
 
 const amazingFacts = [
-`Did you know, the feeling of being somewhere you've previously experienced in a dream is called day jah revey`,
+`Did you know, the feeling of being somewhere you've previously experienced in a dream is called déja rêvé`,
 `An estimated 1 million dogs in the United States have been named the primary beneficiary in their owners' wills.`, 
 `Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
 `There are more possible games contained in a chess than there are atoms in the universe.`, 
@@ -316,6 +328,7 @@ const amazingFacts = [
 `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
 `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
 `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time it develops the ability to crawl? The mechanism responsible for this is called the reticular activating system.`, 
+`Were you aware,  that 3 -- and 4-month-old boys’ testosterone levels correlated with how much more time they spent looking at male-typical toys such as trucks and balls compared with female-typical toys such as dolls, as measured by an eye tracker. Their level of exposure to the hormone androgen during gestation (which can be estimated by their digit ratio, or the relative lengths of their index and ring fingers) also correlated with their visual interest in male-typical toys. “Specifically, boys with more male-typical digit ratios showed greater visual interest in a ball compared to a doll." The study was then repeated with chimpanzees, with nearly identical results.`,
 
 ]
 
@@ -333,6 +346,9 @@ jokebtn.addEventListener('click', () => {
 })
 lyricbtn.addEventListener('click', () => {
     buttonVoice(musicLyrics); 
+})
+factbtn.addEventListener('click', () => {
+    buttonVoice(amazingFacts); 
 })
 
 
@@ -436,7 +452,7 @@ window.onpageshow = function botVoice(){
     const speech = new SpeechSynthesisUtterance(); 
     speech.text = 'Greetings. I am Neumann. I offer philosophical aphorisms for people searching for wisdom. I can also tell jokes.'
     speech.volume = 1; 
-    speech.rate = 1; 
+    speech.rate = .9; 
     speech.pitch = .3; 
     window.speechSynthesis.speak(speech); 
     var element = document.getElementById("container"); 
@@ -447,7 +463,7 @@ function buttonVoice(genre){
     const speech = new SpeechSynthesisUtterance(); 
     speech.text = genre[Math.floor(Math.random() * genre.length)]
     speech.volume = 1; 
-    speech.rate = 1; 
+    speech.rate = .9; 
     speech.pitch = .3; 
     window.speechSynthesis.speak(speech); 
     var element = document.getElementById("container"); 
