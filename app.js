@@ -4,7 +4,7 @@ const voice2text = document.querySelector('.voice2text');
 const philosophybtn = document.querySelector('.philosophy'); 
 const jokebtn = document.querySelector('.joke'); 
 const lyricbtn = document.querySelector('.lyrics');
-const factbtn = document.querySelector('.facts');
+// const factbtn = document.querySelector('.facts');
 const offended = document.querySelector('.offended');
 const fallacy = document.querySelector('.fallacy'); 
 
@@ -46,6 +46,8 @@ const retorts = [
 `Do not let the behavior of others destroy your inner peace.`, 
 `Do not worry. The responsibility of tolerance lies with those who have the wider vision.`,
 `It is a narrow mind which cannot look at a subject from various points of view.`, 
+`All kinds of frankness and honesty are terrible crimes in the eyes of society.`, 
+
 ]
 
 const repeater = [
@@ -104,7 +106,7 @@ const joke = [
 `Two policeman are walking down the street in Vladivostok when they see a guy standing next to the local Party headquarters holding a paintbrush. On the wall, he's just written, "The government is run by idiots!" The first policeman pulls out a pair of handcuffs, and asks the second, "Shall we arrest him for vandalizing public property, or for divulging state secrets?"`, 
 `In the Soviet Union, little Misha is being read a book by his babysitter. She reads: "In the USSR, kindergardens are filled with wonderful toys." Little Misha listens with bright eyes. "In the USSR, every child has a brand new bicycle." Little Misha opens his eyes even wider. "In the USSR, every child drinks hot cocoa for breakfast." Little Misha starts crying his eyes out. The babysitter asks him what's wrong. Bawling, he replies, "I want to go to the USSR!"`, 
 `During the purge of 1937, a soviet judge walks out of his chambers laughing his head off. A colleague approaches him and asks why he is laughing. He replies, "I just heard the funniest joke in the world!" His friend asks, "Well, go ahead and tell me!" The judge replies, "I can't, I just gave someone ten years for it!`, 
-`"Why so many jokes about the Soviet Union, Neumann?", I hear you say. The political conditions of the Soviet Union were responsible for a unique type of humor. Communism was a humour-producing machine. Its economic theories and system of repression created inherently amusing situations. There were jokes under fascism too, but those systems did not create an absurd laugh-a-minute reality like Communism did. I believe it is important to celebrate the absurdity of political repression to enforce fantastic ideology, least we are doomed to employ similar systems of repression ourselves.`, 
+`"Why so many jokes about the Soviet Union, Neumann?", I hear you say. The political conditions of the Soviet Union were responsible for a unique type of humor. Communism was a humour-producing machine. Its economic theories and system of repression created inherently amusing situations. There were jokes under fascism too, but those systems did not create an absurd laugh-a-minute reality like Communism did. I believe it is important to celebrate mocking the absurdity of using political repression to enforce fantastic ideology, least we are doomed to employ similar systems of repression ourselves.`, 
 `How do the Czechs know that the Earth is round? In 1945, the imperialists were driven out from the west, and in 1968, they returned from the east.`, 
 `How do the soviets visit their friends? In tanks.`, 
 `Which are the biggest enemies of Socialism? Spring, summer, autumn, winter, and imperialism.`, 
@@ -114,12 +116,23 @@ const joke = [
 ]
 
 const logicalFallacies = [
-`The Strawman. The strawman occurs when a person misrepresents your argument to make it easier to attack. By exaggerating, reducing, or completely fabricating someone's argument, it's much easier to present your own position as being reasonable, but this kind of dishonesty serves to undermine honest and rational debate.`, 
+`The Strawman. The strawman occurs when a person misrepresents your argument to make it easier to attack. By exaggerating, reducing, or completely fabricating someone's argument, it's much easier to present your own position as being reasonable, but this kind of dishonesty serves to undermine honest and rational debate. The opposite of the strawman is the steelman. The steelman occurs when, after receiving someone's argument, you attempt to reconstruct it as strongly and as convincingly as possible before weighing it against your own. It takes courage and discipline to be intellectually honest, especially when we might have something to lose --- ego.`, 
 `The False Cause. The false cause occurs when a person presumes that a real or perceived relationship between things means that one is caused by the other. This is also known by the phrase "Correlation does not imply causation".`, 
 `The Slippery Slope. The slippery slope occurs when a person assumes that if we allow A to happen, then Z will eventually happen, as an argument why A should not happen. This is a problem because it avoids engaging with the issue at hand, and instead shifts attention to extreme hypotheticals, often without providing underlying evidence of why Z might also happen.`, 
 `The Ad Hominem. The ad hominem, a very common fallacy in todays world, occurs when a person decides to attack your character or personal traits in an attempt to undermine your argument. Remember when the debate is lost, slander becomes the tool of the loser.`, 
 `The Burden of Proof. The burden of proof is always on the side of the person making a claim. This fallacy occurs when a person attempts to shift the burden of proof onto someone else to disprove what is being claimed. If someone tells you that it is not their emotional burden to explain why you have injured them, they are committing this logical fallacy.`, 
-``
+`Appeal to Emotion. Emotions are a vital part of human existence, but in philosophy or rational argument, they often are employed to muddy the waters. It's important to remember that a logically sound argument may stir emotions within us, or have an emotional aspect to them. But the appeal to emotion fallacy occurs when emotion is used in the place of a rational and logically coherent argument. If you then point this out to them, it usually goes over really well.`, 
+`Anecdotal. The anecdotal fallacy occurs when a person uses their personal experience or refers to an isolated example instead of relying on sound argumentation or providing compelling evidence. Scientifically sound evidence is always superior to a person's individual perceptions and experience. But remember, for anecdotal argumentation to be inferior, it must be offered in opposition to more scientifically-based evidence already presented.`, 
+`The Texas Sharpshooter. The texas sharpshooter is a favorite of inscrupulous journalists and 5 minute cable news segments. It occurs when a person draws conclusions based on only the data that supports his hypothesis, and ignores the data that does not. The sin is in not allowing the data itself to paint the whole picture. This is why the cable news segment format is inimicable to the transmission of actual knowledge.`, 
+`Appeal to Authority. This fallacy occurs when a person asserts that because an authority thinks something, it must therefore be true. Remember that "If facts, logic, and scientific procedures are all just arbitrarily "socially constructed notions", then all that is left is consensus -- more specifically peer consensus -- the kind of consensus that matters more to adolescents or to many among the intelligentsia." This is the danger of relying on appeals to authority. This is the danger of undermining the Scientific Method as a socially constructed notion.`, 
+`Begging the Question. Begging the question occurs when a person presents you with a circular argument in which the conclusion was included in the premise. For example, if a group of people dress up in black and calls themselves the anti-bad guy squadron, then uses this self-appointed moniker as an apriori argument for why any of their subsequent actions can't possibly make them "the bad guys".`, 
+`Black or White. This fallacy occurs when a person attempts to limit the choices to two alternative states as the only possibilities, when in fact more possibilities exist. This binary thinking doesn't allow for nuance, context, or varying degrees of a condition. It frames the argument as misleadingly simple and obscures rational and honest debate. It is often employed with the Ad Hominem and Appeal to Emotions to cow people into submission. "If you disagree with defunding the police, you are a racist."`,
+`No True Scotsman. This fallacy occurs when someone makes an appeal to purity as a way to dismiss relevant criticisms or flaws in their argument. It is a means of moving the goalposts when a person is confronted with a contraexample. For instance, if someone asserts that all American patriots oppose burning the American flag, and you respond that you consider yourself a patriot and fully support someone's freedom of expression to burn the American flag, if their reply is "Then you're not a true patriot," they have committed this fallacy.`, 
+`The Bandwagon. This fallacy occurs when a person appeals to the popularity of a position or notion in an attempt to validate the truth of that notion. For example, if someone argues, "If QAnon were just a conspiracy, then why do so many people I know believe it?" they are committing the Bandwagon fallacy.`, 
+`Genetic. This fallacy occurs when a person judges something either as good or bad based solely on its source. In this regard it is similar to the ad hominem fallacy, and one of the reasons this website does not identify the philosophers responsible for the individual aphorisms contained in this application. This is becoming increasingly common on both the left and the right, and contributes to the siloing of thought and free-discourse into like-minded tribes.`, 
+`Moving the Goalposts. This fallacy occurs when evidence presented in response to a specific claim is dismissed and some other (often greater) form of evidence is demanded. For example, when people accused President Obama of not being a natural-born American, and a birth-certificate from Hawaii was produced to refute this, rather than accepting the evidence, the goalposts were then moved to, "prove this birth certificate was not forged as part of a bigger conspiracy."`, 
+`Whataboutism. This fallacy occurs when someone tries to deflect the area of inquiry and any criticisms therein by pointing to other examples of behavior they claim is identical to the one under scrutiny. It was often employed by the Soviet Union, and also more recently, Donald Trump.`, 
+
 ]
 
 const philosophyQuotes = [
@@ -415,6 +428,20 @@ const philosophyQuotes = [
 `Before mass leaders seize the power to fit reality to their lies, their propoganda is marked by its extreme contempt for facts as such, for in their opinion fact depends entirely on the power of man who can fabricate it.`, 
 `Clichés, stock phrases, adherence to conventional, standardized codes of expression and conduct have the socially recognized function of protecting us against reality, that is, against the claim on our thinking attention that all events and facts make by virtue of their existence.`,
 `The greatest evil perpetrated is the evil committed by nobodies, that is, by humans who refuse to be persons.`, 
+`Man is born free, but everywhere is in chains.`, 
+`Man is condemned to be free`, 
+`The bigger a state becomes, the more liberty is diminished.`, 
+`One can buy anything with money except morality`, 
+`Falsehood has an infinite number of combinations; but truth only has one mode of being.`, 
+`The money you have gives you freedom. The money you pursue enslaves you.`, 
+`Once you teach people to say what they do not understand, it is easy to get them to say anything you like.`, 
+`I would rather be a man of paradox than one of prejudices.`, 
+`It is too difficult to think nobly when one only thinks of earning a living.`, 
+`The child badly taught is further from being wise than the one not taught at all.`, 
+`A feeble body weakens the mind.`, 
+`Laws are always useful to those who possess and vexatious to those who have nothing.`, 
+`All kinds of frankness and honesty are terrible crimes in the eyes of society.`, 
+
 ]
 
 const musicLyrics = [
@@ -440,10 +467,10 @@ const musicLyrics = [
 `Jesus Christ girl; What are people going to think? When I show up to one of several funerals I've attended for Grandpa this week. With you. With me. But someone's gotta help me dig. Someone's gotta help me dig.`, 
 `Some will die in hot pursuit and fiery auto crashes Some will die in hot pursuit while sifting through my ashes Some will fall in love with life and drink it from a fountain that is pouring like an avalanche, coming down the mountain. I don't mind the sun sometimes, the images it shows. I can taste you on my lips and smell you in my clothes. Cinnamon and sugary and softly spoken lies. You never know just how you look through other people's eyes.`, 
 `Jealous Cowards Try to control! Rise above we're gonna rise above! They distort What we say! Rise above we're gonna rise above! Try to stop What we do When they can't Do it themselves! Rise above we're gonna rise above! We Are tired. Of your Abuse. Try to stop us but It's No Use! Think they're smart can't think for themselves Laugh at us Behind our backs We find satisfaction in what they lack Rise above we're gonna rise above!`,
-`Left a good job in the city; working for the man every night and day; and I never lost a minute of sleeping worrying about the way things might have been. Big wheel keep on turnin', Proud Mary keep on burnin'. Rolling, rolling, rolling down a river.`, 
+`Left a good job in the city; working for the man every night and day; and I never lost a minute of sleepin' worrying about the way things might have been. Big wheel keep on turnin', Proud Mary keep on burnin'. Made a lot of plates in Memphis; Pumped a lot of pane down in New Orleans, but I never saw the good side of a city, 'till i hitched a ride on a riverboat queen. Big wheel keep on turnin', Proud Mary keep on burnin'.`, 
 `When mom and dad went to a show, they dropped me off at Grandpa Joes, I kicked and screamed said please don't go! Had to eat my dinner there, Mashed potatoes and stuff like that, I couldn't chew my meat too good. Grandma take me home Grandma take me home. She said why don't you stop your cryin', go outside and ride your bike That's what I did i hurt my toe! After dinner I had ice cream, I fell asleep and watched tv, I woke up in my mothers arms! Grandma take me home, I want to be alone.`, 
 `Take a look around the room, love comes wearing disguises. How to go about and choose? Break it down by shapes and sizes, I'm a man who's got very specific tastes. When there's loving in the air, don't fight it just keep breathing. I can't help myself but stare, double check for double meanings. I'm a man who's got very specific tastes.`, 
-`When I ran I didn't feel like a runaway, when I escaped I didn't feel like I got away, There's more to living than only surviving, maybe I'm not there, but I'm still trying. If I seem bleak, well then you'd be correct and if I don't speak it's because I get disconnected, but I won't be, burned by the reflection of the fire in your eyes as you're staring at the sun.`,
+`When I ran, I didn't feel like a runaway, when I escaped I didn't feel like I got away, There's more to living than only surviving, maybe I'm not there, but I'm still trying. If I seem bleak, well then you'd be correct and if I don't speak, it's because I get disconnected, but I won't be, burned by the reflection of the fire in your eyes as you're staring at the sun.`,
 `Where they lead, you will follow. Well I guess that's just the way it goes. And if you look away, you'll be doing what they say, and If you look alive, you'll be singled out and tried. If you take home anything, let it be your will to think. The more cynical you become, the better off you'll be!`, 
 `Some might say that sunshine follows thunder. Go and tell it to the man who cannot shine. Some might say, that we should never ponder, on our thoughts today cause they hold sway over time. Some might say, we will find a brighter day.`
 
@@ -477,9 +504,9 @@ jokebtn.addEventListener('click', () => {
 lyricbtn.addEventListener('click', () => {
     buttonVoice(musicLyrics); 
 })
-factbtn.addEventListener('click', () => {
-    buttonVoice(amazingFacts); 
-})
+// factbtn.addEventListener('click', () => {
+//     buttonVoice(amazingFacts); 
+// })
 offended.addEventListener('click', () => {
     buttonVoice(retorts)
 })
