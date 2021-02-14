@@ -10,7 +10,7 @@ body {
   color: black;
 }
 
-a {
+.anchor {
   position: relative;
   display: inline-block;
   padding: 15px 30px;
@@ -23,7 +23,7 @@ a {
   transition: 0.2s;
 }
 
-a:hover {
+.anchor:hover {
   color: #233784;
   background: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
