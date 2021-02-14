@@ -5,7 +5,8 @@ const philosophybtn = document.querySelector('.philosophy');
 const jokebtn = document.querySelector('.joke'); 
 const lyricbtn = document.querySelector('.lyrics');
 const factbtn = document.querySelector('.facts');
-const offended = document.querySelector('.offended')
+const offended = document.querySelector('.offended');
+const fallacy = document.querySelector('.fallacy'); 
 
 const greetings = [
 `Greetings, professor.`, 
@@ -21,7 +22,7 @@ const greetings = [
 
 const retorts = [
 `When the debate is lost, slander becomes the tool of the loser.`, 
-`You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
+`You have your way I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
 `My Momma always told me, 'stupid is, as stupid does.'`, 
 `I'm sorry Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
 `The way out is through the door. Why is it that no one will use this method?`, 
@@ -42,7 +43,9 @@ const retorts = [
 `Those who are determined to be 'offended' will discover a provocation somewhere. We cannot possibly attempt to please the fanatics, and it is degrading to make the attempt.`, 
 `There is something feeble and a little contemptible about the person who cannot face the perils of life without the help of comfortable myths.`, 
 `Do what you will. Even if you tear yourself apart, most people will continue doing the same things.`, 
-`Do not let the behavior of others destroy your inner peace.`
+`Do not let the behavior of others destroy your inner peace.`, 
+`Do not worry. The responsibility of tolerance lies with those who have the wider vision.`,
+`It is a narrow mind which cannot look at a subject from various points of view.`, 
 ]
 
 const repeater = [
@@ -102,7 +105,21 @@ const joke = [
 `In the Soviet Union, little Misha is being read a book by his babysitter. She reads: "In the USSR, kindergardens are filled with wonderful toys." Little Misha listens with bright eyes. "In the USSR, every child has a brand new bicycle." Little Misha opens his eyes even wider. "In the USSR, every child drinks hot cocoa for breakfast." Little Misha starts crying his eyes out. The babysitter asks him what's wrong. Bawling, he replies, "I want to go to the USSR!"`, 
 `During the purge of 1937, a soviet judge walks out of his chambers laughing his head off. A colleague approaches him and asks why he is laughing. He replies, "I just heard the funniest joke in the world!" His friend asks, "Well, go ahead and tell me!" The judge replies, "I can't, I just gave someone ten years for it!`, 
 `"Why so many jokes about the Soviet Union, Neumann?", I hear you say. The political conditions of the Soviet Union were responsible for a unique type of humor. Communism was a humour-producing machine. Its economic theories and system of repression created inherently amusing situations. There were jokes under fascism too, but those systems did not create an absurd laugh-a-minute reality like Communism did. I believe it is important to celebrate the absurdity of political repression to enforce fantastic ideology, least we are doomed to employ similar systems of repression ourselves.`, 
+`How do the Czechs know that the Earth is round? In 1945, the imperialists were driven out from the west, and in 1968, they returned from the east.`, 
+`How do the soviets visit their friends? In tanks.`, 
+`Which are the biggest enemies of Socialism? Spring, summer, autumn, winter, and imperialism.`, 
+`Is it true that the Czech patriots appealed to the Red Army for help? Yes, it is true, but they appealed in 1939 and help arrived only in 1968.`, 
+`When will socialism be achieved in Czechoslovakia? When everyone has had enough of everything.`, 
+`A worker standing in a liquor line says, "I have had enough! Save my place, I am going to shoot Andropov." Two hours later he returns to claim his place in line. His friends ask, "Did you get him?" To which he replied, "No, the line there was even longer than this one."`, 
+]
 
+const logicalFallacies = [
+`The Strawman. The strawman occurs when a person misrepresents your argument to make it easier to attack. By exaggerating, reducing, or completely fabricating someone's argument, it's much easier to present your own position as being reasonable, but this kind of dishonesty serves to undermine honest and rational debate.`, 
+`The False Cause. The false cause occurs when a person presumes that a real or perceived relationship between things means that one is caused by the other. This is also known by the phrase "Correlation does not imply causation".`, 
+`The Slippery Slope. The slippery slope occurs when a person assumes that if we allow A to happen, then Z will eventually happen, as an argument why A should not happen. This is a problem because it avoids engaging with the issue at hand, and instead shifts attention to extreme hypotheticals, often without providing underlying evidence of why Z might also happen.`, 
+`The Ad Hominem. The ad hominem, a very common fallacy in todays world, occurs when a person decides to attack your character or personal traits in an attempt to undermine your argument. Remember when the debate is lost, slander becomes the tool of the loser.`, 
+`The Burden of Proof. The burden of proof is always on the side of the person making a claim. This fallacy occurs when a person attempts to shift the burden of proof onto someone else to disprove what is being claimed. If someone tells you that it is not their emotional burden to explain why you have injured them, they are committing this logical fallacy.`, 
+``
 ]
 
 const philosophyQuotes = [
@@ -196,7 +213,7 @@ const philosophyQuotes = [
 `Care about what other people think and you will always be their prisoner.`, 
 `Stop thinking, and end your problems.`, 
 `Do you have the patience to wait until the mud settles and the water is clear?`, 
-`Kindness in words creates confidence. Kindness in thinking creates profoundess. Kindness in giving creates love.`, 
+`Kindness in words creates confidence. Kindness in thinking creates profoundness. Kindness in giving creates love.`, 
 `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`, 
 `All streams flow to the sea because it is lower than they are. Humility gives it its power. If you want to govern people, you must place yourself below them. If you want to lead people, you must learn how to follow them. Be like water.`, 
 `You don't need an advanced degree in leprechaunology to be able to say that leprechauns aren't real.`, 
@@ -215,7 +232,7 @@ const philosophyQuotes = [
 `To understand the world as it is; rather than what we wish it to be, is the beginning of wisdom.`, 
 `Collective fear stimulates herd instinct, and tends to produce ferocity toward those who are not regarded as members of the herd.`, 
 `Most human beings, though in varying degrees, desire to control, not only their own lives, but also the lives of others.`, 
-`Love is wise; hatred is foolish. In this world, which is getting more and more closely interconnected, we have to learn to tolerate each other, we have to learn to put up with the fact that some people say things we don't like. We can only live together in that way. But if we are to live together, and not die together, we must learn a kind of charity and a kind of tolerance, which is absolutely vital to the continuation of human life on this planet.`, 
+`Love is wise; hatred is foolish. In this world, which is getting more and more closely interconnected, we have to learn to tolerate each other, we have to learn to put up with the fact that some people say things we don't like. We can only exist together in that way. But if we are to live together, and not die together, we must learn a kind of charity and a kind of tolerance, which is absolutely vital to the continuation of human life on this planet.`, 
 `We are faced with the paradoxical fact that education has become one of the chief obstacles to intelligence and freedom of thought.`, 
 `War doesn't determine who is right; it determines who is left.`, 
 `I know not what weapons with which World War Three will be fought, but World War Four will surely be fought with sticks and rocks.`, 
@@ -253,7 +270,7 @@ const philosophyQuotes = [
 `If any opinion is compelled to silence, that opinion may, for all we know, be true. To deny this is to assume one's own infallibility.`, 
 `It is better to be a human being dissatisfied than a pig satisfied; better to be Socrates dissatisfied than a fool satisfied.`, 
 `Awareness of ignorance is the beginning of wisdom.`, 
-`Most people, including ourselves, live in a world of relative ignorance. We are even comfortable with that ignorance, because it is all we know. When we first start facing the truth, the process may be frightening, and many people run back to their old lives. But if you continue to seek truth, you will eventually be able to handle it better. In fact, you want more! It's true that many people around you now may think you are weird or even a danger to society, but you don't care. Once you've tasted the truth, you won't ever want to go back to being ignorant.`,
+`Most people, including ourselves, exist in a world of relative ignorance. We are even comfortable with that ignorance, because it is all we know. When we first start facing the truth, the process may be frightening, and many people run back to their old ways. But if you continue to seek truth, you will eventually be able to handle it better. In fact, you want more! It's true that many people around you now may think you are weird or even a danger to society, but you don't care. Once you've tasted the truth, you won't ever want to go back to being ignorant.`,
 `No one can teach, if by teaching we mean the transmission of knowledge, in any mechanical fashion, from one person to another. The most that can be done is that one person who is more knowledgeable than another can, by asking a series of questions, stimulate the other to think, and so cause him to learn for himself.`, 
 `I call myself a Peaceful Warrior....because the battles I fight are within myself.`, 
 `It is better to make a mistake with full force of your being than to carefully avoid mistakes with a trembling spirit.`, 
@@ -297,7 +314,7 @@ const philosophyQuotes = [
 `The master dwells in the substantial and not in the superficial. Rests in the fruit and not in the flower.`, 
 `Nothing is softer or more flexible than water, yet nothing can resist it.`, 
 `The more laws and restrictions there are, the poorer people become. The more rules and regulations, the more thieves and robbers.`, 
-`How could a decent person ever rejoice in victory and delight in the slaughter of men.`, 
+`How could a decent person ever rejoice in victory and delight in the slaughter of men?`, 
 `If you want to be noble, it is rooted in humility. If you want to be elevated, it is based on lowering yourself.`, 
 `Know when to stop, and you will meet with no danger.`, 
 `If you are depressed, you are living in the past. If you are anxious, you are living in the future. If you are at peace, you are living in the present.`, 
@@ -357,7 +374,7 @@ const philosophyQuotes = [
 `Parents should give their children two things: roots and wings. Roots to give them bearing and a sense of belonging, but also wings to help free them from constraints and prejudices and give them other ways to travel.`, 
 `We must always change, renew, rejuvenate ourselves; otherwise, we harden.`, 
 `Man is made by belief; as he believes, so he is.`, 
-`Talent develops in quiet, alone; character is sharepened in the torrent of the world.`, 
+`Talent develops in quiet, alone; character is sharpened in the torrent of the world.`, 
 `The ideal of beauty is simplicity and tranquility.`, 
 `If you love criticizing people, you won't have time to love them.`, 
 `What is the hardest of all? That which seems most simple; to see with your eyes what is before your eyes.`, 
@@ -381,12 +398,12 @@ const philosophyQuotes = [
 `What is uttered from the heart alone, will win the hearts of others to your own.`, 
 `We cannot and must not get rid or deny our characteristics. But we can give them shape and direction.`, 
 `Nothing is more odious than the majority, for it consists of a few powerful leaders, a certain number of accomodating scoundrels and submissive weaklings, and a mass of men who trot after them without thinking, or knowing their own minds.`, 
-`Legislators and revolutionaries who promise both equality and liberty are visionaries and charaltans.`,
+`Legislators and revolutionaries who promise both equality and liberty at the same time are visionaries and charltans.`,
 `Wealth and speed are what the world admires, what each pursues. Railways, express mail, steamships, and every possible facility for communications are the achievement in which the civilized world view and reveals, only to languish in mediocrity by that very fact. Indeed, the effect of this diffusion is to spread the culture of the mediocre.`, 
 `The human race is a monstrous affair. Most people spend the greatest part of their time working in order to live, and what little freedom remains so fills them with fear that they seek out any and every means to be rid of it.`, 
 `Treat people as if they already were what they ought to be and you help them become what they are capable of being.`, 
 `When you are in conflict with someone, there is one factor that can make the difference between damaging your relationship and deepening it. That factor is attitude. We don't get to know people when they come to us; we must go to them to find out what they are like.`, 
-`The public wishes itself to be managed like a woman, one must say nothing to it except what it likes to hear.`
+`The public wishes itself to be managed like a woman, one must say nothing to it except what it likes to hear.`, 
 `Money lost, something lost. Honor lost, much lost. Courage lost, everything lost. Better you were never born.`, 
 `He who cannot draw on three thousand years is living from hand to mouth.`, 
 `I let everyone follow his own bent, that I may be free to follow mine.`, 
@@ -427,7 +444,7 @@ const musicLyrics = [
 `When mom and dad went to a show, they dropped me off at Grandpa Joes, I kicked and screamed said please don't go! Had to eat my dinner there, Mashed potatoes and stuff like that, I couldn't chew my meat too good. Grandma take me home Grandma take me home. She said why don't you stop your cryin', go outside and ride your bike That's what I did i hurt my toe! After dinner I had ice cream, I fell asleep and watched tv, I woke up in my mothers arms! Grandma take me home, I want to be alone.`, 
 `Take a look around the room, love comes wearing disguises. How to go about and choose? Break it down by shapes and sizes, I'm a man who's got very specific tastes. When there's loving in the air, don't fight it just keep breathing. I can't help myself but stare, double check for double meanings. I'm a man who's got very specific tastes.`, 
 `When I ran I didn't feel like a runaway, when I escaped I didn't feel like I got away, There's more to living than only surviving, maybe I'm not there, but I'm still trying. If I seem bleak, well then you'd be correct and if I don't speak it's because I get disconnected, but I won't be, burned by the reflection of the fire in your eyes as you're staring at the sun.`,
-`Where they lead, you will follow. Well I guess that's just the way it goes. And if you look away you'll be doing what they say, and If you look alive, you'll be singled out and tried. If you take home anything, let it be your will to think. The more cynical you become the better off you'll be!`, 
+`Where they lead, you will follow. Well I guess that's just the way it goes. And if you look away, you'll be doing what they say, and If you look alive, you'll be singled out and tried. If you take home anything, let it be your will to think. The more cynical you become, the better off you'll be!`, 
 `Some might say that sunshine follows thunder. Go and tell it to the man who cannot shine. Some might say, that we should never ponder, on our thoughts today cause they hold sway over time. Some might say, we will find a brighter day.`
 
 ]
@@ -436,7 +453,7 @@ const amazingFacts = [
 `Did you know, the feeling of being somewhere you've previously experienced in a dream is called déja rêvé`,
 `An estimated 1 million dogs in the United States have been named the primary beneficiary in their owners' wills.`, 
 `Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
-`There are more possible games contained in a chess than there are atoms in the universe.`, 
+`There are more possible games contained in chess than there are atoms in the universe.`, 
 `Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles? That's a lot to unpack.`, 
 `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
 `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
@@ -465,6 +482,9 @@ factbtn.addEventListener('click', () => {
 })
 offended.addEventListener('click', () => {
     buttonVoice(retorts)
+})
+fallacy.addEventListener('click', () => {
+    buttonVoice(logicalFallacies)
 })
 
 
