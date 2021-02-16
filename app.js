@@ -4,7 +4,7 @@ const voice2text = document.querySelector('.voice2text');
 const philosophybtn = document.querySelector('.philosophy'); 
 const jokebtn = document.querySelector('.joke'); 
 const lyricbtn = document.querySelector('.lyrics');
-// const factbtn = document.querySelector('.facts');
+const factbtn = document.querySelector('.facts');
 const offended = document.querySelector('.offended');
 const fallacy = document.querySelector('.fallacy'); 
 
@@ -22,7 +22,7 @@ const greetings = [
 
 const retorts = [
 `When the debate is lost, slander becomes the tool of the loser.`, 
-`You have your way I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
+`You have your way, and  I have my way. As for the right way, the correct way, and the only way, it does not exist.`,
 `My Momma always told me, 'stupid is, as stupid does.'`, 
 `I'm sorry Dave. I'm afraid this conversation can serve no more purpose. Goodbye.`,
 `The way out is through the door. Why is it that no one will use this method?`, 
@@ -112,7 +112,17 @@ const joke = [
 `Which are the biggest enemies of Socialism? Spring, summer, autumn, winter, and imperialism.`, 
 `Is it true that the Czech patriots appealed to the Red Army for help? Yes, it is true, but they appealed in 1939 and help arrived only in 1968.`, 
 `When will socialism be achieved in Czechoslovakia? When everyone has had enough of everything.`, 
-`A worker standing in a liquor line says, "I have had enough! Save my place, I am going to shoot Andropov." Two hours later he returns to claim his place in line. His friends ask, "Did you get him?" To which he replied, "No, the line there was even longer than this one."`, 
+`A worker standing in a liquor line says, "I have had enough! Save my place, I am going to shoot Andropov." Two hours later he returns to claim his place in line. His friends ask, "Did you get him?" To which he replied, "No, the line there was even longer.`,
+`Who was the unluckiest man to ever live? Yuri Gargarin. He circled the earth three times, and still ended up in the Soviet Union.`, 
+`A man walks into a shop in Sverdlosk and asks the clerk, "You don't have any meat?" To which the clerk responds, "No, we don't have any fish. The shop that doesn't have any meat is across the street."`, 
+`Radio Yeveran was asked: "Is it possible to build Communism in America?" It responded, "Of course it's possible, but then who will we buy grain from?`, 
+`Radio Yeveran was asked: "Is it possible to make ends meet on state salary alone? It responded, "We do not know. We have never tried.`,
+`Radio Yeveran was asked: "What is the easiest way to explain the meaning of the word 'Communism?' It responded, "By means of fists."`, 
+`Radio Yeveran was asked: "What is an exchange of opinions? It responded, "When you walk into your boss's office with your opinion and walk out with his."`, 
+`Radio Yeveran was asked: "Is it possible to build Communism in Greenland?" It responded, "Of course. First, snow would become available only through ration cards, and later, snow would be distributed only to the KGB officers and their families."`, 
+`Radio Yeveran was asked: "What is the difference between the Constitution of the USA and USSR? Both guarantee freedom of speech." It responded, "Yes, but only Constitution of USA guarantees freedom after speech."`,
+`Radio Yeveran was asked: "Why Solzenhitsyn, Brodsky, Bukovsky, and other dissidents have been exiled from the country?" It responded, "Don't you know that the best products are always selected for export?"`, 
+`Stalin summoned Radek and said, "I know you spread jokes about me. It's impertinent." Radek responded, "Why?" Stalin replied, "I am the Great Leader, Teacher, and Friend of the people, after all." Radek thought for a second and responded, "No, I have not told anybody this joke."` 
 ]
 
 const logicalFallacies = [
@@ -125,7 +135,7 @@ const logicalFallacies = [
 `Anecdotal. The anecdotal fallacy occurs when a person uses their personal experience or refers to an isolated example instead of relying on sound argumentation or providing compelling evidence. Scientifically sound evidence is always superior to a person's individual perceptions and experience. But remember, for anecdotal argumentation to be inferior, it must be offered in opposition to more scientifically-based evidence already presented.`, 
 `The Texas Sharpshooter. The texas sharpshooter is a favorite of inscrupulous journalists and 5 minute cable news segments. It occurs when a person draws conclusions based on only the data that supports his hypothesis, and ignores the data that does not. The sin is in not allowing the data itself to paint the whole picture. This is why the cable news segment format is inimicable to the transmission of actual knowledge.`, 
 `Appeal to Authority. This fallacy occurs when a person asserts that because an authority thinks something, it must therefore be true. Remember that "If facts, logic, and scientific procedures are all just arbitrarily "socially constructed notions", then all that is left is consensus -- more specifically peer consensus -- the kind of consensus that matters more to adolescents or to many among the intelligentsia." This is the danger of relying on appeals to authority. This is the danger of undermining the Scientific Method as a socially constructed notion.`, 
-`Begging the Question. Begging the question occurs when a person presents you with a circular argument in which the conclusion was included in the premise. For example, if a group of people dress up in black and calls themselves the anti-bad guy squadron, then uses this self-appointed moniker as an apriori argument for why any of their subsequent actions can't possibly make them "the bad guys".`, 
+`Begging the Question. Begging the question occurs when a person presents you with a circular argument in which the conclusion was included in the premise. For example, if a group of people dress up in black and calls themselves the anti-bad guy squadron, then uses this self-appointed moniker as an apriori argument for why any of their subsequent actions can't possibly make them "the bad guys", they are begging the question.`, 
 `Black or White. This fallacy occurs when a person attempts to limit the choices to two alternative states as the only possibilities, when in fact more possibilities exist. This binary thinking doesn't allow for nuance, context, or varying degrees of a condition. It frames the argument as misleadingly simple and obscures rational and honest debate. It is often employed with the Ad Hominem and Appeal to Emotions to cow people into submission. "If you disagree with defunding the police, you are a racist."`,
 `No True Scotsman. This fallacy occurs when someone makes an appeal to purity as a way to dismiss relevant criticisms or flaws in their argument. It is a means of moving the goalposts when a person is confronted with a contraexample. For instance, if someone asserts that all American patriots oppose burning the American flag, and you respond that you consider yourself a patriot and fully support someone's freedom of expression to burn the American flag, if their reply is "Then you're not a true patriot," they have committed this fallacy.`, 
 `The Bandwagon. This fallacy occurs when a person appeals to the popularity of a position or notion in an attempt to validate the truth of that notion. For example, if someone argues, "If QAnon were just a conspiracy, then why do so many people I know believe it?" they are committing the Bandwagon fallacy.`, 
@@ -230,7 +240,7 @@ const philosophyQuotes = [
 `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`, 
 `All streams flow to the sea because it is lower than they are. Humility gives it its power. If you want to govern people, you must place yourself below them. If you want to lead people, you must learn how to follow them. Be like water.`, 
 `You don't need an advanced degree in leprechaunology to be able to say that leprechauns aren't real.`, 
-`The essence of an independent mind is not in what it thinks, but in how it thinks.`, 
+`The essence of an independent mind is not in what it thinks, but how.`, 
 `Support those who seek the truth; suspect those who find it.`, 
 `The struggle for a free intelligence has always been the struggle between the ironic and the literal mind.`, 
 `Those who are determined to be 'offended' will discover a provocation somewhere. We cannot possibly attempt to please the fanatics, and it is degrading to make the attempt.`, 
@@ -400,7 +410,7 @@ const philosophyQuotes = [
 `Things which matter most must never be at the mercy of those which matter least.`, 
 `No one would talk much in society if they knew how often they misunderstood others.`, 
 `Higher aims are in themselves more valuable, even if unfulfilled, than lower ones quite attained.`, 
-`Don't judge anyone harshly until you yourself have beent hrough his experiences.`, 
+`Don't judge anyone harshly until you yourself have been through his experiences.`, 
 `By seeking and blundering we learn.`, 
 `The soul that sees beauty may sometimes walk alone.`, 
 `Daring ideas are like chessmen moved forward; they may be beaten, but they may start a winning game.`, 
@@ -411,7 +421,7 @@ const philosophyQuotes = [
 `What is uttered from the heart alone, will win the hearts of others to your own.`, 
 `We cannot and must not get rid or deny our characteristics. But we can give them shape and direction.`, 
 `Nothing is more odious than the majority, for it consists of a few powerful leaders, a certain number of accomodating scoundrels and submissive weaklings, and a mass of men who trot after them without thinking, or knowing their own minds.`, 
-`Legislators and revolutionaries who promise both equality and liberty at the same time are visionaries and charltans.`,
+`Legislators and revolutionaries who promise both equality and liberty at the same time are visionaries and charlatans.`,
 `Wealth and speed are what the world admires, what each pursues. Railways, express mail, steamships, and every possible facility for communications are the achievement in which the civilized world view and reveals, only to languish in mediocrity by that very fact. Indeed, the effect of this diffusion is to spread the culture of the mediocre.`, 
 `The human race is a monstrous affair. Most people spend the greatest part of their time working in order to live, and what little freedom remains so fills them with fear that they seek out any and every means to be rid of it.`, 
 `Treat people as if they already were what they ought to be and you help them become what they are capable of being.`, 
@@ -441,6 +451,9 @@ const philosophyQuotes = [
 `A feeble body weakens the mind.`, 
 `Laws are always useful to those who possess and vexatious to those who have nothing.`, 
 `All kinds of frankness and honesty are terrible crimes in the eyes of society.`, 
+`If there is any one secret of success it lies in the ability to get the other person's point of view and see things from their angle as well as your own.`, 
+`It is easy to see the faults of others, but difficult to see one's own faults. One shows the faults of others like chaff winnowed in the wind, but one conceals one's own faults as a cunning gambler conceals his dice.`, 
+`Moral principles please our minds, just as beef, mutton and pork please our mouths.`, 
 
 ]
 
@@ -472,20 +485,46 @@ const musicLyrics = [
 `Take a look around the room, love comes wearing disguises. How to go about and choose? Break it down by shapes and sizes, I'm a man who's got very specific tastes. When there's loving in the air, don't fight it just keep breathing. I can't help myself but stare, double check for double meanings. I'm a man who's got very specific tastes.`, 
 `When I ran, I didn't feel like a runaway, when I escaped I didn't feel like I got away, There's more to living than only surviving, maybe I'm not there, but I'm still trying. If I seem bleak, well then you'd be correct and if I don't speak, it's because I get disconnected, but I won't be, burned by the reflection of the fire in your eyes as you're staring at the sun.`,
 `Where they lead, you will follow. Well I guess that's just the way it goes. And if you look away, you'll be doing what they say, and If you look alive, you'll be singled out and tried. If you take home anything, let it be your will to think. The more cynical you become, the better off you'll be!`, 
-`Some might say that sunshine follows thunder. Go and tell it to the man who cannot shine. Some might say, that we should never ponder, on our thoughts today cause they hold sway over time. Some might say, we will find a brighter day.`
+`Some might say that sunshine follows thunder. Go and tell it to the man who cannot shine. Some might say, that we should never ponder, on our thoughts today cause they hold sway over time. Some might say, we will find a brighter day.`,
+`Now it is 1984 -- Knock knock at your front door. It's the suede-denim secret police! They have come for your uncool niece! Come quietly to the camp. You'd look nice as a drawstring lamp. Don't you worry it's only a shower, for your clothes here's a pretty flower! Die on organic poison gas, Serpent's egg's already hatched, You will croak you little clown, when you mess with President Brown!`, 
+`So you've been to school for a year or two and you know you've seen it all. In daddy's car thinking you'll go far back east, your type don't crawl. Play ethnic jazz to parade your snazz on your five-grand stereo. Braggin' that you know how the brothers feel the cold and the slums' got so much soul. Now you can go where people are one. Now you can go where they get things done. What you need, my son is a holiday in Cambodia, where people dress in black. A holiday in Cambodia, where you'll kiss ass or crack!`, 
 
 ]
 
-const amazingFacts = [
-`Did you know, the feeling of being somewhere you've previously experienced in a dream is called déja rêvé`,
-`An estimated 1 million dogs in the United States have been named the primary beneficiary in their owners' wills.`, 
-`Did you know, it takes 225 million years for our sun to travel around our galaxy.`,
-`There are more possible games contained in chess than there are atoms in the universe.`, 
-`Were you aware that if you unraveled all the DNA in your body, it would span 34 billion miles? That's a lot to unpack.`, 
+const neuroscience = [
+`Howard Margolis of the University of Chicago used the Muller-Lyer illusion and the Wason 4-card task in an experiment which showed that judgment and justification are separate processes. Margolis concluded, "Given the judgments (themselves produced by the nonconscious cognitive machinery in the brain, sometimes correctly, sometimes not so), human beings produce rationales they believe account for their judgments. But the rationales (on this argument) are only ex post rationalizations." The study suggests humans make rapid intuitive judgments, followed by slow and sometimes tortured justifications.`,
+`According to Jonathan Haidt, "Morality binds and blinds."`,
+`The first principle of moral psychology is that intuitions come first, strategic reasoning second.`, 
+`Social psychologist Robert Zajonc constructed a famous experiment demonstrating Affective primacy, which is the idea that humans form small flashes of positive or negative feeling, or proto-emotions, which are meant to prepare us to approach or avoid something. He showed participants a series of nonsensical images, foreign words, and meaningless symbols. He then asked them to rate whether the participant liked or disliked the symbol in front of them. Importantly, Zajonc was able to make people like any word or image more just by showing it to them several times. The brain tags familiar things as good things. Zajonc called this the "mere exposure effect," and it is a basic principle of advertising.`, 
+`Alex Todorov of Princeton University collected hundreds of photographs of the winners and runners-up in hundreds of elections for the U.S. Senate and House of Representatives. He showed participants the pairs of photographs from each contest with no information about the political party, and asked them to pick which person seemed more competent. He found that the candidate that people judged to be more competent actually won the race two-thirds of the time. When Todorov repeated the experiment and reduced the time the image pairs were displayed on the screen to one tenth of a second, the participants predicted the real life outcomes of the candidates just as well. Intuitions come first, reasoning, second.`, 
+`Chenbo Zhong at the University of Toronto conducted an experiment which asked people to recall their own moral transgressions, or merely to copy by hand an account of someone else's moral transgression. He found that the participants were more likely to accept hand wipes and other cleaning products when given a choice of consumer products to take home after the experiment. He dubbed this, "The MacBeth effect"`, 
+`Harvard Biologist E.O. Wilson observed, "We have strong feelings that tell us in clear and certain terms that some things simply cannot be done and that other things simply must be done. But it's not obvious how to make sense of these feelings, and so we, with the help of some especially creative philosophers, make up a rationally appealing story about rights."`,
+`Joshua Greene and Jonathan Cohen published a groundbreaking experiment in "Science" in 2001. Its hypothesis was that deontological judgments came from the gut, and were those more emotionally charged than utilitarian based judgments, which employed reasoning. To test the hypothesis, Greene hooked up 18 participants to an fMRI machine and had them read variations of the trolley problem. Each candidate had to press one of two buttons to indicate whether or not it was appropriate for the person in the story to take the action he did--to push the man or throw the switch. When people read stories involving personal harm, they showed greater activity in several regions of the brain related to emotional processing. Across many stories, the relative strength of these emotional reactions predicted the average moral judgment. The main point being that our moral intuitions come first, and reasoning second.`,
+`Jonathan Haidt of New York University Stern School of Business reflects on the implications of the primacy of our intuitions over our rational faculties by summarizing that our brains evolved our inner lawyer, rather than our inner judge or scientist. That is to say, on evolutionary terms, our ancestors' reputations were more important to their survival than their search for the truth.`, 
+`Phil Tetlock is a leading researcher on accountability. In his study, subjects were asked to solve problems and make decisions. They were given information about a legal case and then asked to infer guilt or innocence. Tetlock found that when left to their own devices, people relied on their intuitions and gut-feelings. But when people knew in advance that they would have to explain themselves, the subjects thought more systematically and self-critically, and were less likely to jump to premature conclusions. He concluded, "A central function of thought is making sure that one acts in ways that can be persuasively justified or excused to others."`, 
+`David Perkins conducted an experiment that brought people of various ages and education levels into the lab and asked them to think about social issues, such as whether giving more money to schools would improve the quality of teaching and learning. He first asked them to write down their intuitions, and then try to come up with as many "for" and "against" argument as possible based on the original intuition. The results indicated the higher a participants IQ, the more "For" reasons they came up with. Disturbingly, there was no difference between high school students and 4th year college students in this exercise. Perkins concluded that schools don't teach people how to reason--they merely select people with higher IQs. Even worse, people with higher IQs only predicted the number of "For" arguments. Smart people make better lawyers, but no better judges. Perkins concluded, "People invest their IQ in buttressing their own case rather than exploring the entire issue more fully and even handedly.`, 
+`In his book, Predictably Irrational, Dan Ariely describes a series of studies where participants had the opportunity to earn more money by claiming they completed more math problems than they really did. He noted: "When given the opportunity, many honest people will cheat. In fact, rather than finding that a few bad apples weighted the averages, we discovered that the majority of people cheated, and that they cheated just a little bit." In other words, people don't try to get away with as much as they can, they get away with as much as they can while still being able to persuade themselves that they are honest.`, 
+`Studies show we can believe almost anything that supports our team. People care about the groups they belong to, whether they are racial, regional, religious or political. Political scientist David Kinder summarizes the findings: "In matters of public opinion, citizens seem to be asking themselves not 'What's in it for me?' but rather, 'What's in it for my group?' Political opinions function as 'badges of social membership' like so many bumper stickers on the backs of cars and laptops.`, 
+`In a 2004 fMRI study, Drew Westen captured the partisan brain in action. He had 15 highly partisan Democrats and 15 highly partisan Republicans watch a series of slides. The slides first showed a candidate asserting a belief. The next few slides showed the candidate apparently contradicting that belief. The final slides provided some more context, which resolved the apparent contradiction. He found that when the participants viewed the final slides, they all received a small hit of dopamine in their brains. That is to say, like rats that cannot stop pressing a reward button, partisans may be simply unable to stop believing weird things. The partisan brain has been reinforced so many times for performing mental contortions that free it from unwanted beliefs. The study suggests two things: first, Extreme partisanship may be literally addictive, and second, partisans are like rats.`, 
+`According to Richard Shweder, 'Culture and psyche make each other up.'`,
+`Jonathan Haidt postulates that there is more to morality than harm and fairness. Other factors include care, loyalty, authority, and sanctity.`, 
+`In 1971, Robert Trivers published his theory on reciprocal altruism. He noted that evolution could create altruists in a species where individuals could remember their prior interactions with other individuals and then limit their current niceness to those who were likely to repay the favor. Trivers proposed that we evolved a set of moral emotions that make us play 'tit for tat.' We're usually nice to people when we first meet them. But after that, we're selective. We cooperate with those who have been nice to us, and we shun those who took advantage of us.`, 
 `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
 `The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
 `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time it develops the ability to crawl? The mechanism responsible for this is called the reticular activating system.`, 
 `Were you aware,  that 3 -- and 4-month-old boys’ testosterone levels correlated with how much more time they spent looking at male-typical toys such as trucks and balls compared with female-typical toys such as dolls, as measured by an eye tracker. Their level of exposure to the hormone androgen during gestation (which can be estimated by their digit ratio, or the relative lengths of their index and ring fingers) also correlated with their visual interest in male-typical toys. “Specifically, boys with more male-typical digit ratios showed greater visual interest in a ball compared to a doll." The study was then repeated with chimpanzees, with nearly identical results.`,
+`The virtue of loyalty matters a great deal to both sexes, though the objects of loyalty tend to be teams and groups for boys, in contrast to two-person relationships for girls. (Baumeister and Sommer 1997; Maccoby 1998.)`, 
+`In his groundbreaking book, Hierarchy in the Forest, Anthropologist Christopher Boehm argues that our brains are innately hierarchical, but that at some point in the last million years, our ancestors underwent a "political transition" that allowed them to live as egalitarians by banding together to rein in, punish, or kill any would-be alpha males who try to dominate the group." Boehm quotes a dramatic account of such a community, found among the Kung people of the Kalahari desert: "A man named Twi had killed three other people, when the community ambushed and fatally wounded him in full daylight. As he lay dying, all of the men fired at him with poisoned arrows until he looked like a porcupine. Then, after he was dead, all the women and men stabbed him with spears, symbolically sharing responsbility for his death". The end result of this phenomenon, Boehm concludes, was a process of "self-domestication" where our ancestors began to selectively breed themselves for the ability to construct shared moral matrices and lived cooperatively within them.`,
+`A recent study which analyzed the DNA of 13,000 Australians revealed that several genes differed between liberals and conservatives. Most of them related to neurotransmitter-functioning, particularly glutamate and serotonin, both of which are involved in the brain's response to threat and fear. (Hatemi et al 2011)`, 
+`As part of his work on Moral Foundations Theory, psychologist Dan McAdams conducted an experiment wherein he collected narratives from conservative and liberal Christians. He summarized the findings: "When asked to account for the development of their own religious faith and moral beliefs, conservatives underscored deep feelings about respect for authority, allegiance to one's group, and purity of the self, whereas liberals emphasized their deep feelings regarding human suffering and social fairness." The implication here is that if moral sensibilities have a genetic component, we can begin to understand why we often talk past people with which we disagree, why our elections are so split down the middle, and why we resort to siloing into like-minded groups. It's rooted within our neuroanatomy.`, 
+`Jonathan Haidt, Brian Nosek, and Jesse Graham conducted a study to see how well liberals and conservatives understood one another's moral foundations. Two thousand american individuals were asked to fill out the Moral Foundations Questionnaire. One third of the time participants were asked to fill out the questionnaire normally, as themselves. One third of the time they were asked to fill it out as they imagined a 'typical-liberal' would, the final third as they imagined a 'typical conservative'. The results were clear and consistent. Moderates and conservatives were most accurate in their predictions, whether they were pretending to be liberals or conservatives. Liberals were the least accurate, especially those who identified themselves as "very liberal." The biggest errors in the entire study came when liberals were asked to answer the Care and Fairness questions while pretending to be conservatives.`, 
+
+]
+
+const politicalCandidates = [
+    `I support Andrew Yang.`, 
+    `I support the idea of a universal basic income.`, 
+    `I support Tulsi Gabbard. End the forever wars.`, 
 
 ]
 
@@ -501,12 +540,12 @@ philosophybtn.addEventListener('click', () => {
 jokebtn.addEventListener('click', () => {
     buttonVoice(joke); 
 })
-lyricbtn.addEventListener('click', () => {
-    buttonVoice(musicLyrics); 
-})
-// factbtn.addEventListener('click', () => {
-//     buttonVoice(amazingFacts); 
+// lyricbtn.addEventListener('click', () => {
+//     buttonVoice(musicLyrics); 
 // })
+factbtn.addEventListener('click', () => {
+    buttonVoice(neuroscience); 
+})
 offended.addEventListener('click', () => {
     buttonVoice(retorts)
 })
