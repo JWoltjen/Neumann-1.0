@@ -546,7 +546,7 @@ const neuroscience = [
 `Happiness, anger, sadness, fear, disgust, and surprise are the six emotions that are universally expressed in humans.`, 
 `The type of music you listen to affects how you perceive the world.`, 
 `Volunteers are significantly more happy with their lives than non-volunteers.`, 
-`Optimistic beliefs about the future can protect people from phsycial and mental illnes.`, 
+`Optimistic beliefs about the future can protect people from physical and mental illnes.`, 
 `Research has shown that good relationships are more important to a long life than exercise.`
 ]
 
