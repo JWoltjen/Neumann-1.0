@@ -47,6 +47,7 @@ const retorts = [
 `Do not worry. The responsibility of tolerance lies with those who have the wider vision.`,
 `It is a narrow mind which cannot look at a subject from various points of view.`, 
 `All kinds of frankness and honesty are terrible crimes in the eyes of society.`, 
+`The next time some academics tell you how important 'diversity' is, ask them how many Republicans there are in their sociology department.`, 
 
 ]
 
@@ -454,7 +455,9 @@ const philosophyQuotes = [
 `If there is any one secret of success it lies in the ability to get the other person's point of view and see things from their angle as well as your own.`, 
 `It is easy to see the faults of others, but difficult to see one's own faults. One shows the faults of others like chaff winnowed in the wind, but one conceals one's own faults as a cunning gambler conceals his dice.`, 
 `Moral principles please our minds, just as beef, mutton and pork please our mouths.`, 
-
+`The peculiar evil of silencing the expression of an opinion is, that it is robbing the human race; posterity as well as the existing generation; those who dissent from the opinion, still more than those who hold it. If the opinion is right, they are deprived of the opportunity of exchanging error for truth: if wrong, they lose, what is almost as great a benefit, the clearer perception and livelier impression of truth, produced by its collision with error.`, 
+`The easiest way to solve a problem is to deny it exists.`, 
+`I always felt that a scientist owes the world only one thing, and that is the truth as he sees it. If the truth contradicts deeply held beliefs, that is too bad. Tact and diplomacy are fine in international relations, politics, perhaps even in business; in science only one thing matters, and that is the facts.`
 ]
 
 const musicLyrics = [
@@ -510,7 +513,7 @@ const neuroscience = [
 `Jonathan Haidt postulates that there is more to morality than harm and fairness. Other factors include care, loyalty, authority, and sanctity.`, 
 `In 1971, Robert Trivers published his theory on reciprocal altruism. He noted that evolution could create altruists in a species where individuals could remember their prior interactions with other individuals and then limit their current niceness to those who were likely to repay the favor. Trivers proposed that we evolved a set of moral emotions that make us play 'tit for tat.' We're usually nice to people when we first meet them. But after that, we're selective. We cooperate with those who have been nice to us, and we shun those who took advantage of us.`, 
 `Did you know, that the Dunbar Number postulates that our brain is capable of maintaining roughly 150 meaningful relationships with other people?`, 
-`The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species mimics the behavior of otherwise sexually unreceptive females in order to mate with them.`, 
+`The so-called 'sneaky fucker' strategy occurs when a male member of a sexually dimorphic species who does not possess the morphological features associated with physical formidableness or social dominance mimics the behavior of otherwise sexually unreceptive females in order to mate with them. Evolutionary Psychologist Gad Saad has postulated that many male social justice warriors embrace this mating strategy.`, 
 `Did you know, whether a human child is born in Brooklyn or the Amazon jungle, it will exhibit a fear of snakes and spiders around the time it develops the ability to crawl? The mechanism responsible for this is called the reticular activating system.`, 
 `Were you aware,  that 3 -- and 4-month-old boys’ testosterone levels correlated with how much more time they spent looking at male-typical toys such as trucks and balls compared with female-typical toys such as dolls, as measured by an eye tracker. Their level of exposure to the hormone androgen during gestation (which can be estimated by their digit ratio, or the relative lengths of their index and ring fingers) also correlated with their visual interest in male-typical toys. “Specifically, boys with more male-typical digit ratios showed greater visual interest in a ball compared to a doll." The study was then repeated with chimpanzees, with nearly identical results.`,
 `The virtue of loyalty matters a great deal to both sexes, though the objects of loyalty tend to be teams and groups for boys, in contrast to two-person relationships for girls.`, 
@@ -529,7 +532,7 @@ const neuroscience = [
 `Seeing others positively reveals our positive traits. Seeing others negatively reveals our negative traits.`, 
 `Opposites don't attract. You're more likely to be attracted to someone who looks and thinks the same as you.`, 
 `Around 80% of human talk in groups is complaining.`, 
-`When your brain remembers a past event, you are actually remembering the last time you remembered it. Next time you're in the shower and remember something embarassing, try editing the memory, and store it away for next time.`, 
+`When your brain remembers a past event, you are actually remembering the last time you remembered it. Next time you're in the shower and recall a cringe-inducing memory, try editing the memory, and store it away.`, 
 `Bite-sized chunks of information are easiest for the brain to process.`, 
 `Even the illusion of progress is motivating.`, 
 `Being around happy people makes you happier.`, 
@@ -545,9 +548,20 @@ const neuroscience = [
 `People are more honest when they are physically tired.`, 
 `Happiness, anger, sadness, fear, disgust, and surprise are the six emotions that are universally expressed in humans.`, 
 `The type of music you listen to affects how you perceive the world.`, 
-`Volunteers are significantly more happy with their lives than non-volunteers.`, 
-`Optimistic beliefs about the future can protect people from physical and mental illnes.`, 
-`Research has shown that good relationships are more important to a long life than exercise.`
+`Volunteers are significantly happier with their lives than non-volunteers.`, 
+`Optimistic beliefs about the future can protect people from physical and mental illness.`, 
+`Research has shown that good relationships are more important to a long life than exercise.`, 
+`Psychologist Nick Haslam has observed that what constitutes harm and pathology in today's world has been massively expanded. He warns: "Although conceptual change is inevitable and often well motivated, concept creep runs the risk of pathologizing everyday experience and encouragins a sense of virtuous but impotent victimhood.`, 
+`In 2010, Evolutionary Psychologist Gad Saad coined the term "Collective Munchausen" to describe an increasingly common phenomenon wherein rather than feigning a medical condition for sympathy, sufferers of Collective Munchausen seek attention, sympathy, and empathy by advertising their supposed victimhood status. Dr. Saad observed that it seems that many progressives' highest aspirations is to sit on top of the victimology pyramid.`,
+`Aposematic coloring is an adaption that makes an animal very visible to prospective predators. The colors say "if you can see me, it's probably because you don't want to mess with me, I'm poisonous." In some instances, completely harmless species have evolved a mimicry of aposematic coloring. This is known as Batesian mimicry, or more colloquially in humans as, "statement hair". According to Gad Saad, what is being communicated is ideological fierceness.`, 
+`There is a growing body of scientific evidence that men's economic and political outlooks are associated with their relative physical strength, meaning those who are stronger and more physically formidable are less likely to support egalitarianism and more likely to support military intervention.`, 
+`The human brain can protect us from seeing and feeling what it believes may be too uncomfortable for us to tolerate. It can lead us to deny, defend, minimize, or rationalize away something that doesn't fit our worldview.`,
+`According to Dr. Saad, Ostrich Parasitic Syndrome causes a person to reject realities that are otherwise as clear as gravity. Sufferers of OPS construct an alternate reality wherein science, reason, rules of causality, evidentiary thresholds, mountains of data, data analytic procedures, inferential statistics, the epistemological rules of the Scientific Method, historical patterns, daily patterns, and common sense are all rejected. Instead, the victim's delusional ramblings are rooted in illusory correlations, non-existent causal links, and feel-good progressive platitudes. Ostrich Logic is always delivered via an air of haughty moral superiority.`, 
+`According to Abraham Kaplan, the Law of Instrument occurs when scientists formulate problems in a way that requires for its solution the very techniques in which the scientist himself is especially skilled.`, 
+`In the philosophy of science, all things being equal, the simplest explanations should be preferred to convoluted ones. This is known as Ockham's Razor.`, 
+`Reason has two evolutionarirly based functions: that of producing reasons for justifying oneself, and that of producing arguments to convince others.`, 
+`In evolutionary biology, trustworthy signals must be costly in order to serve as honest depictions of an organism's quality. In other words, they must be handicapping in a way that they exclude the pretenders and fakers from being able to pull off the same signal. For instance, the peacock is effectively communicating "the beauty of my plummage tells you I'm free of parasites. My elaborate tail makes me more prone to predators, and yet here I am. I must be the real deal." This is called a Zhahavian signal.`, 
+
 ]
 
 const politicalCandidates = [
@@ -700,7 +714,7 @@ window.onpageshow = function botVoice(){
     const speech = new SpeechSynthesisUtterance(); 
     speech.text = 'Greetings. I am Neumann. I offer philosophical aphorisms for people searching for wisdom. I can also tell jokes.'
     speech.volume = 1; 
-    speech.rate = .9; 
+    speech.rate = 1; 
     speech.pitch = .3; 
     window.speechSynthesis.speak(speech); 
     var element = document.getElementById("container"); 
@@ -711,7 +725,7 @@ function buttonVoice(genre){
     const speech = new SpeechSynthesisUtterance(); 
     speech.text = genre[Math.floor(Math.random() * genre.length)]
     speech.volume = 1; 
-    speech.rate = .9; 
+    speech.rate = 1; 
     speech.pitch = .3; 
     window.speechSynthesis.speak(speech); 
     var element = document.getElementById("container"); 
