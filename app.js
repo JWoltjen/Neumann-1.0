@@ -687,7 +687,7 @@ offended.addEventListener('click', () => {
 fallacy.addEventListener('click', () => {
     buttonVoice(logicalFallacies)
 })
-
+//test//
 
 recognition.onresult = (event) => {
     const current = event.resultIndex; 
